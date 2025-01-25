@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107fa0858ac8b334cb2e1239409784f6, type: 3}
+  m_Name: Customer-Cat-Rosa
+  m_EditorClassIdentifier: 
+  Image: {fileID: -7232521027535748977, guid: e685520b84236d34ca15edc30cd6ad3e, type: 3}
+  CustomerName: Rosa
+  RandomDialogue:
+  - I've heard you sell those.. special teas? I'll have one thank you darling! My
+    Name? No you can't have my name to call out!
+  - 'I''ll go for one with extra bubbles! Of course you''ll have the good taste not
+    to say I spoke to you right? '
+  - How do you get the bubbles to be so crunchy? I love it, I'll take one to go please!
+  - Sorry! I thought I saw someone I know in the corner! Can I grab one of those
+    crunchy bubble tea things to go quickly please?
+  - Let's make this quick, my slave left the door open and they are probably looking
+    for me.
+  - I know that I shouldn't be slumming it, but a good bubble tea is hard to beat!
+  CorrectDrinkDialogue:
+  - Mmmm... that's just the right flavour. Remember... you never saw me right?
+  - Wow! If the other girls saw me enjoying this, imagine what they'd say!
+  - 'Hmm this is better than my wet food at home! '
+  - If my slave knew I was getting out to come here i'd be in such trouble. Worth
+    it!
+  - What's that mousey note you managed to include? Have to say i'm a fan!
+  - 'This is better than my nip at home! '
+  IncorrectDrinkDialogue:
+  - I had to put a disguise on just for this?! Pfft!
+  - Look, you're the only shop that sells this near me. Can you try and get it right?
+  - If I wanted to taste something like this I'd stay home and eat the dry food my
+    slave brings me!
+  - You know the risk I'm taking being seen here right?
+  - It's called standards darling, perhaps you should consider having some.
+  - Make sure to clean the litter box after your pour this into it darling!
