@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
-  m_Name: Ingredient-GreenBalls
+  m_Name: Ingredient-PurpleLiquid
   m_EditorClassIdentifier: 
-  ThoughtBubbleImage: {fileID: 21300000, guid: 0c47ed9af2641a54d9116888b650d6b5, type: 3}
-  PacketImage: {fileID: 21300000, guid: 0c47ed9af2641a54d9116888b650d6b5, type: 3}
-  SpawnedIngredient: {fileID: 8136808525521607368, guid: f488b826d5682a3498df5dc725fe4773, type: 3}
-  CategoryNumber: 2
-  Amount: 3
-  DelayPerSpawn: 0.25
+  ThoughtBubbleImage: {fileID: 21300000, guid: 700e90630fbdf154a84370d737a0a5ff, type: 3}
+  PacketImage: {fileID: 21300000, guid: 700e90630fbdf154a84370d737a0a5ff, type: 3}
+  SpawnedIngredient: {fileID: 8136808525521607368, guid: e3485896ae6dcb24fbabdf63472b7e1c, type: 3}
+  CategoryNumber: 1
+  Amount: 100
+  DelayPerSpawn: 0.01
   ScaleRandomness: 0.25

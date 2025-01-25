@@ -12,6 +12,10 @@ public class IngredientManager : MonoBehaviour
     [SerializeField]
     private int ingredientCount = 5;
     [SerializeField]
+    private float finishDelayBeforeDialogue = 2;
+    [SerializeField]
+    private float finishDelayAfterDialogue = 5;
+    [SerializeField]
     private ThoughtBubble thoughtBubble;
     [SerializeField]
     private DraggableIngredient draggableIngredientTemplate;
@@ -131,9 +135,11 @@ public class IngredientManager : MonoBehaviour
 
     private IEnumerator ShowResult()
     {
+        yield return new WaitForSeconds(finishDelayBeforeDialogue);
+
         // TODO Dialogue here
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(finishDelayAfterDialogue);
 
         NewCustomer();
     }
