@@ -33,6 +33,34 @@ public class DraggableIngredient : MonoBehaviour
         icon.sprite = ingredient.PacketImage;
     }
 
+    private void Update()
+    {
+        float aspectRatio = (float)Screen.width / (float)Screen.height;
+
+        Vector3 position = transform.position;
+        if (position.y < -5)
+        {
+            position.y = -5;
+            transform.position = position;
+        }
+        if (position.y > 5)
+        {
+            position.y = 5;
+            transform.position = position;
+        }
+
+        if (position.x < -5 * aspectRatio)
+        {
+            position.x = -5 * aspectRatio;
+            transform.position = position;
+        }
+        if (position.x > 5 * aspectRatio)
+        {
+            position.x = 5 * aspectRatio;
+            transform.position = position;
+        }
+    }
+
     private void OnMouseDown()
     {
         lastMousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
