@@ -24,6 +24,7 @@ public class ThoughtBubble : MonoBehaviour
             SpriteRenderer newItem = Instantiate(thoughtBubbleItemTemplate, spawnParent);
             newItem.sprite = ingredient.ThoughtBubbleImage;
             newItem.sortingOrder = 1 + ingredient.CategoryNumber;
+            spawnedBubbleItems.Add(newItem);
         }
     }
 }
