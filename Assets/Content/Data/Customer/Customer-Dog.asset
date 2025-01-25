@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 107fa0858ac8b334cb2e1239409784f6, type: 3}
   m_Name: Customer-Dog
   m_EditorClassIdentifier: 
-  Image: {fileID: 0}
+  Image: {fileID: -3994744024693093290, guid: c69b40a8f9af950428812538fa6ee0cd, type: 3}
   CustomerName: Chicken
   RandomDialogue:
   - Woof

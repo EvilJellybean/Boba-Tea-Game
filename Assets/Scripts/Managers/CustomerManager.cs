@@ -12,6 +12,10 @@ public class CustomerManager : MonoBehaviour
     private int customerCount = 3;
     [SerializeField]
     private FinalPanel finalPanel;
+    [SerializeField]
+    private SpeechBubble speechBubble;
+    [SerializeField]
+    private SpriteRenderer customerImage;
 
     private int currentCustomerNumber;
     private List<Customer> customersLeft = new List<Customer>();
@@ -37,6 +41,7 @@ public class CustomerManager : MonoBehaviour
 
     public void NextCustomer()
     {
+        speechBubble.Hide();
         if (currentCustomerNumber >= customerCount)
         {
             FinalScore = IngredientManager.Instance.TotalScore / customerCount;
@@ -50,11 +55,28 @@ public class CustomerManager : MonoBehaviour
 
         currentCustomerNumber++;
 
+        customerImage.sprite = currentCustomer.Image;
         IngredientManager.Instance.CreateNewDrinkOrder();
+        ShowRandomDialogue();
     }
 
     public void ShowFinalDialogue(bool isCorrectDrink)
     {
+        if(isCorrectDrink)
+        {
+            string dialogue = currentCustomer.CorrectDrinkDialogue[Random.Range(0, currentCustomer.CorrectDrinkDialogue.Count)];
+            speechBubble.ShowDialogue(dialogue);
+        }
+        else
+        {
+            string dialogue = currentCustomer.IncorrectDrinkDialogue[Random.Range(0, currentCustomer.IncorrectDrinkDialogue.Count)];
+            speechBubble.ShowDialogue(dialogue);
+        }
+    }
 
+    private void ShowRandomDialogue()
+    {
+        string dialogue = currentCustomer.RandomDialogue[Random.Range(0, currentCustomer.RandomDialogue.Count)];
+        speechBubble.ShowDialogue(dialogue);
     }
 }
