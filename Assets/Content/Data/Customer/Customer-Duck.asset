@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 107fa0858ac8b334cb2e1239409784f6, type: 3}
   m_Name: Customer-Duck
   m_EditorClassIdentifier: 
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: b5bd70fb1e4be1541a57e654c851d572, type: 3}
   CustomerName: Duck
   RandomDialogue:
   - Quack
