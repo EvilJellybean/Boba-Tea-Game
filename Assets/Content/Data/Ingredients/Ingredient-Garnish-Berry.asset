@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
+  m_Name: Ingredient-Garnish-Berry
+  m_EditorClassIdentifier: 
+  ThoughtBubbleImage: {fileID: 21300000, guid: 968a937e97dd86749be1ae003075aca9, type: 3}
+  PacketImage: {fileID: 2640698560752043771, guid: 39d0f56e6bd399f47853231f830410a4, type: 3}
+  SpawnedIngredient: {fileID: 8136808525521607368, guid: ec51ebdcbff8b614d95eefb22bae4c4b, type: 3}
+  CategoryNumber: 5
+  Amount: 1
+  DelayPerSpawn: 0.1
+  ScaleRandomness: 0.25
+  AllowRotation: 0
