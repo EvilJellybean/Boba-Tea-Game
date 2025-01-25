@@ -11,6 +11,8 @@ public class IngredientManager : MonoBehaviour
     private List<Ingredient> allIngredients = new List<Ingredient>();
     [SerializeField]
     private int ingredientCount = 5;
+    [SerializeField, Range(0.0f, 1.0f)]
+    private float ingredientSpacing = 0.5f;
     [SerializeField]
     private float finishDelayBeforeDialogue = 2;
     [SerializeField]
@@ -116,7 +118,14 @@ public class IngredientManager : MonoBehaviour
         for (int i = 0; i < allIngredients.Count; i++)
         {
             Ingredient ingredient = allIngredients[i];
-            Vector3 spawnPosition = ingredientDraggableZone.position + new Vector3(Random.Range(-draggableZoneSize.x / 2, draggableZoneSize.x / 2), Random.Range(-draggableZoneSize.y / 2, draggableZoneSize.y / 2), 0);
+
+            float categoryPercent = 1.0f / ingredientCount;
+
+            // Split by category
+            Vector3 startPosition = ingredientDraggableZone.position - new Vector3(draggableZoneSize.x / 2, draggableZoneSize.y / 2);
+            startPosition.x += draggableZoneSize.x / 2 * categoryPercent;
+            Vector3 randomOffset = new Vector3(Random.Range(-draggableZoneSize.x / 2 * categoryPercent, draggableZoneSize.x/2 * categoryPercent), (Random.Range(0, draggableZoneSize.y)));
+            Vector3 spawnPosition = startPosition + new Vector3(draggableZoneSize.x * categoryPercent * (ingredient.CategoryNumber-1), 0) + (randomOffset * (1 - ingredientSpacing));
             DraggableIngredient newDraggableIngredient = Instantiate(draggableIngredientTemplate, spawnPosition, Quaternion.identity);
             newDraggableIngredient.Configure(ingredient, i+1);
             draggableIngredients.Add(newDraggableIngredient);
