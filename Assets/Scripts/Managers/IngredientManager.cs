@@ -56,17 +56,8 @@ public class IngredientManager : MonoBehaviour
 
     public void CreateNewDrinkOrder()
     {
-        for (int i = 0; i < spawnedIngredients.Count; i++)
-        {
-            Destroy(spawnedIngredients[i].gameObject);
-        }
-        spawnedIngredients.Clear();
-
-        for (int i = 0; i < draggableIngredients.Count; i++)
-        {
-            Destroy(draggableIngredients[i].gameObject);
-        }
-        draggableIngredients.Clear();
+        ClearIngredients();
+        ClearDraggableIngredients();
 
         desiredIngredients.Clear();
         chosenIngredients.Clear();
@@ -100,6 +91,24 @@ public class IngredientManager : MonoBehaviour
         {
             StartCoroutine(ShowResult());
         }
+    }
+
+    private void ClearIngredients()
+    {
+        for (int i = 0; i < spawnedIngredients.Count; i++)
+        {
+            Destroy(spawnedIngredients[i].gameObject);
+        }
+        spawnedIngredients.Clear();
+    }
+
+    private void ClearDraggableIngredients()
+    {
+        for (int i = 0; i < draggableIngredients.Count; i++)
+        {
+            Destroy(draggableIngredients[i].gameObject);
+        }
+        draggableIngredients.Clear();
     }
 
     private void SpawnDraggableIngredients()
@@ -150,6 +159,8 @@ public class IngredientManager : MonoBehaviour
 
     private IEnumerator ShowResult()
     {
+        ClearDraggableIngredients();
+
         float correctness = CalculateCorrectness();
         bool isCorrectDrink = correctness > 0.999f;
         TotalScore += correctness;
