@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BobaTypes_0
+      name: BobaTypes_Taro
       rect:
         serializedVersion: 2
         x: 0
@@ -137,7 +137,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaTypes_1
+      name: BobaTypes_Mango
       rect:
         serializedVersion: 2
         x: 166
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaTypes_2
+      name: BobaTypes_Strawberry
       rect:
         serializedVersion: 2
         x: 335
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaTypes_3
+      name: BobaTypes_Orange
       rect:
         serializedVersion: 2
         x: 2
@@ -203,7 +203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaTypes_4
+      name: BobaTypes_Lime
       rect:
         serializedVersion: 2
         x: 172
@@ -225,7 +225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaTypes_5
+      name: BobaTypes_Black
       rect:
         serializedVersion: 2
         x: 344
@@ -247,7 +247,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaTypes_6
+      name: Ingredient_Packet
       rect:
         serializedVersion: 2
         x: 5
@@ -255,7 +255,7 @@ TextureImporter:
         width: 208
         height: 191
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -282,13 +282,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BobaTypes_0: 3619434612110762011
-      BobaTypes_1: -9057840043801427148
-      BobaTypes_2: 537568987510870044
-      BobaTypes_3: -7152057999485705260
-      BobaTypes_4: 1677443721670599359
-      BobaTypes_5: -4540267140833257047
-      BobaTypes_6: 1944904769
+      BobaTypes_Black: -4540267140833257047
+      BobaTypes_Lime: 1677443721670599359
+      BobaTypes_Mango: -9057840043801427148
+      BobaTypes_Orange: -7152057999485705260
+      BobaTypes_Strawberry: 537568987510870044
+      BobaTypes_Taro: 3619434612110762011
+      Ingredient_Packet: 1944904769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

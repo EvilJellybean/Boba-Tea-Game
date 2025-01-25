@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GarnishSingles_0
+      name: GarnishSingles_Berry
       rect:
         serializedVersion: 2
         x: 36
@@ -123,7 +123,7 @@ TextureImporter:
         width: 117
         height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,7 +137,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GarnishSingles_1
+      name: GarnishSingles_Mochi
       rect:
         serializedVersion: 2
         x: 195
@@ -145,7 +145,7 @@ TextureImporter:
         width: 118
         height: 171
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GarnishSingles_2
+      name: GarnishSingles_Lime
       rect:
         serializedVersion: 2
         x: 349
@@ -167,7 +167,7 @@ TextureImporter:
         width: 115
         height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GarnishSingles_3
+      name: GarnishSingles_Pineapple
       rect:
         serializedVersion: 2
         x: 35
@@ -189,7 +189,7 @@ TextureImporter:
         width: 116
         height: 166
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,7 +203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GarnishSingles_4
+      name: GarnishSingles_Quandong
       rect:
         serializedVersion: 2
         x: 199
@@ -211,7 +211,7 @@ TextureImporter:
         width: 119
         height: 174
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,7 +225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GarnishSingles_5
+      name: GarnishSingles_Cherry
       rect:
         serializedVersion: 2
         x: 361
@@ -233,7 +233,7 @@ TextureImporter:
         width: 127
         height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 92e3f69610e252a45a518ca15e8a5a65
     internalID: 0
     vertices: []
     indices: 
@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GarnishSingles_Berry: 2640698560752043771
+      GarnishSingles_Cherry: 7503873962192559694
+      GarnishSingles_Lime: -2091189764846212597
+      GarnishSingles_Mochi: 2466490646307085749
+      GarnishSingles_Pineapple: 4247238717965206573
+      GarnishSingles_Quandong: -885005825815329547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

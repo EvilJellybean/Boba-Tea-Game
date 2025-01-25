@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BobaSingles_0
+      name: BobaSingles_Taro
       rect:
         serializedVersion: 2
         x: 43
@@ -123,7 +123,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,7 +137,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_1
+      name: BobaSingles_Mango
       rect:
         serializedVersion: 2
         x: 206
@@ -145,7 +145,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_2
+      name: BobaSingles_Strawberry
       rect:
         serializedVersion: 2
         x: 374
@@ -167,7 +167,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_3
+      name: BobaSingles_Orange
       rect:
         serializedVersion: 2
         x: 45
@@ -189,7 +189,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,7 +203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_4
+      name: BobaSingles_Lime
       rect:
         serializedVersion: 2
         x: 206
@@ -211,7 +211,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,7 +225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_5
+      name: BobaSingles_Black
       rect:
         serializedVersion: 2
         x: 365
@@ -233,7 +233,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0aab1a287e301b1409cc3bc2269daa89
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BobaSingles_0: 7955560536456438329
-      BobaSingles_1: 6004085334169056419
-      BobaSingles_2: 7863734799060867785
-      BobaSingles_3: 6065525987603843450
-      BobaSingles_4: 7791858531431219678
-      BobaSingles_5: -8371039915596139248
+      BobaSingles_Black: -8371039915596139248
+      BobaSingles_Lime: 7791858531431219678
+      BobaSingles_Mango: 6004085334169056419
+      BobaSingles_Orange: 6065525987603843450
+      BobaSingles_Strawberry: 7863734799060867785
+      BobaSingles_Taro: 7955560536456438329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

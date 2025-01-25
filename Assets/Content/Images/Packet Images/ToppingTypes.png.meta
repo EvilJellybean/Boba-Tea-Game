@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ToppingTypes_0
+      name: ToppingTypes_Saltbush
       rect:
         serializedVersion: 2
         x: 49
@@ -143,7 +143,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_1
+      name: ToppingTypes_AdzukiBean
       rect:
         serializedVersion: 2
         x: 210
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_4
+      name: ToppingTypes_Lemongrass
       rect:
         serializedVersion: 2
         x: 371
@@ -187,7 +187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_5
+      name: ToppingTypes_Passionfruit
       rect:
         serializedVersion: 2
         x: 33
@@ -209,7 +209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_6
+      name: ToppingTypes_Lillypilly
       rect:
         serializedVersion: 2
         x: 207
@@ -231,7 +231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_7
+      name: ToppingTypes_Ice
       rect:
         serializedVersion: 2
         x: 360
@@ -266,12 +266,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ToppingTypes_0: -2512002747765574915
-      ToppingTypes_1: -1258836507706050440
-      ToppingTypes_4: -3220831546767855339
-      ToppingTypes_5: -3148370073084621117
-      ToppingTypes_6: -732907611097914601
-      ToppingTypes_7: 6099780111553129053
+      ToppingTypes_AdzukiBean: -1258836507706050440
+      ToppingTypes_Ice: 6099780111553129053
+      ToppingTypes_Lemongrass: -3220831546767855339
+      ToppingTypes_Lillypilly: -732907611097914601
+      ToppingTypes_Passionfruit: -3148370073084621117
+      ToppingTypes_Saltbush: -2512002747765574915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
