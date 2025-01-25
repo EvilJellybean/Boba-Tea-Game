@@ -9,9 +9,6 @@ public class DraggableIngredient : MonoBehaviour
     [SerializeField]
     private SpriteRenderer icon;
 
-    [SerializeField]
-    private Ingredient testIngredient;
-
     private Camera mainCamera;
     private Vector2 lastMousePosition;
 
@@ -20,7 +17,6 @@ public class DraggableIngredient : MonoBehaviour
     private void Awake()
     {
         mainCamera = Camera.main;
-        Configure(testIngredient);
     }
 
     public void Configure(Ingredient ingredient)
