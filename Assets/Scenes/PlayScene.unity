@@ -492,6 +492,7 @@ GameObject:
   - component: {fileID: 520738871}
   - component: {fileID: 520738870}
   - component: {fileID: 520738869}
+  - component: {fileID: 520738873}
   m_Layer: 0
   m_Name: Liquid Camera
   m_TagString: Untagged
@@ -617,6 +618,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &520738873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520738868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308956a815525d842a213a09dc144efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderTexture: {fileID: 8400000, guid: e3d109e91ea5a7648937cb9c3f243ade, type: 2}
+  camera: {fileID: 520738871}
 --- !u!1 &919428998
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,12 +782,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1675,8 +1690,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -340.15234, y: -482}
-  m_SizeDelta: {x: 564.9967, y: 378.69202}
+  m_AnchoredPosition: {x: -379, y: -518}
+  m_SizeDelta: {x: 708.277, y: 474.7264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1950644666
 MonoBehaviour:
@@ -1698,7 +1713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5007465203087833557, guid: c83f05bcaad5bcc42bee6bfee22c7fd7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c83f05bcaad5bcc42bee6bfee22c7fd7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
