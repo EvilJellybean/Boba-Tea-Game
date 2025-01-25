@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8402442563508439744}
   - component: {fileID: 9065705089245355092}
   - component: {fileID: 1036369853174652230}
-  - component: {fileID: 9034691596778812087}
+  - component: {fileID: 788302169495048178}
   m_Layer: 0
-  m_Name: Ingredient-GreenGarnishStick
+  m_Name: Ingredient-Garnish-Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.1197698, y: -0.15232326, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 4f1a7a0588f6e1b44a2d8385a491d556, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9075ff1871b561e4bb5836b6e439ea35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,7 +116,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &9034691596778812087
+--- !u!60 &788302169495048178
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
