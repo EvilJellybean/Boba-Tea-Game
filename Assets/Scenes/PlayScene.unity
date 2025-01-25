@@ -791,11 +791,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1266482177 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5747263542295843863, guid: 77e6db27fb7fd784696cafdc0da21e74, type: 3}
-  m_PrefabInstance: {fileID: 2472797453861208976}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1267369572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,10 +1165,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: IngredientManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7423564413661401243, guid: 77e6db27fb7fd784696cafdc0da21e74, type: 3}
-      propertyPath: ingredientSpawnPoint
-      value: 
-      objectReference: {fileID: 1266482177}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

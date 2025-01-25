@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2fbe9bafa208a4ebf44417e9ccf2b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredientSpawnZone: {fileID: 5747263542295843863}
+  spawnZoneSize: {x: 2, y: 1}
 --- !u!1 &8618219508781200592
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5747263542295843863}
   m_Layer: 0
-  m_Name: IngredientSpawnPoint
+  m_Name: IngredientSpawnZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

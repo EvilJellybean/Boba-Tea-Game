@@ -17,4 +17,7 @@ public class Ingredient : ScriptableObject
 
     [field: SerializeField]
     public float DelayPerSpawn = 0.25f;
+
+    [field: SerializeField, Range(0.0f, 0.5f)]
+    public float ScaleRandomness = 0.25f;
 }
