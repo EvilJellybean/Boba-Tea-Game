@@ -23,6 +23,7 @@ public class ThoughtBubble : MonoBehaviour
             Ingredient ingredient = desiredIngredients[i];
             SpriteRenderer newItem = Instantiate(thoughtBubbleItemTemplate, spawnParent);
             newItem.sprite = ingredient.ThoughtBubbleImage;
+            newItem.sortingOrder = 1 + ingredient.CategoryNumber;
         }
     }
 }
