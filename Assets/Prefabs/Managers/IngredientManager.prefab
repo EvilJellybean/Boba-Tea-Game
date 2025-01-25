@@ -84,7 +84,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 86087e84a0ba58f46897d9b2f2b444ee, type: 2}
   - {fileID: 11400000, guid: 2a7771c3afa41204bb5a218002c4bf6e, type: 2}
   - {fileID: 11400000, guid: a60159e8a1fb3a24cb0075d641e552d2, type: 2}
-  ingredientCount: 3
+  - {fileID: 11400000, guid: 487d3ce09f5f3da43b251a20bf587abc, type: 2}
+  - {fileID: 11400000, guid: 9882b3d1891fed54c8c4ccbc492d4fae, type: 2}
+  - {fileID: 11400000, guid: 79fc2efa91a9ac540b628cbef9f7705f, type: 2}
+  - {fileID: 11400000, guid: 7bcb923362925e34d9996b7de1317967, type: 2}
+  ingredientCount: 5
   finishDelayBeforeDialogue: 2
   finishDelayAfterDialogue: 5
   customerCount: 3
