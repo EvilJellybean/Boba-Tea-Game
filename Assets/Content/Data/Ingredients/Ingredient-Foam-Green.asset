@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
-  m_Name: Ingredient-PurpleLiquid
+  m_Name: Ingredient-Foam-Green
   m_EditorClassIdentifier: 
-  ThoughtBubbleImage: {fileID: 21300000, guid: 700e90630fbdf154a84370d737a0a5ff, type: 3}
-  PacketImage: {fileID: 21300000, guid: 700e90630fbdf154a84370d737a0a5ff, type: 3}
-  SpawnedIngredient: {fileID: 8136808525521607368, guid: e3485896ae6dcb24fbabdf63472b7e1c, type: 3}
-  CategoryNumber: 1
-  Amount: 120
+  ThoughtBubbleImage: {fileID: 21300000, guid: fe9bb386392600d43a7bc8a6eca1720a, type: 3}
+  PacketImage: {fileID: 21300000, guid: 08ef8134e0e388d4ea9dbab87e3e80e7, type: 3}
+  SpawnedIngredient: {fileID: 8136808525521607368, guid: 6c157942a57b6a444b808189686b8698, type: 3}
+  CategoryNumber: 4
+  Amount: 30
   DelayPerSpawn: 0.01
   ScaleRandomness: 0.25
   AllowRotation: 1
