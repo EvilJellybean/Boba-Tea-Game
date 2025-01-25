@@ -12,7 +12,15 @@ public class IngredientManager : MonoBehaviour
     [SerializeField]
     private int ingredientCount = 5;
     [SerializeField]
+    private float finishDelayBeforeDialogue = 2;
+    [SerializeField]
+    private float finishDelayAfterDialogue = 5;
+    [SerializeField]
+    private int customerCount = 5;
+    [SerializeField]
     private ThoughtBubble thoughtBubble;
+    [SerializeField]
+    private FinalPanel finalPanel;
     [SerializeField]
     private DraggableIngredient draggableIngredientTemplate;
 
@@ -31,8 +39,11 @@ public class IngredientManager : MonoBehaviour
     private Vector2 draggableZoneSize;
 
     private List<Ingredient> desiredIngredients = new List<Ingredient>();
+    private List<Ingredient> chosenIngredients = new List<Ingredient>();
     private List<DraggableIngredient> draggableIngredients = new List<DraggableIngredient>();
     private List<GameObject> spawnedIngredients = new List<GameObject>();
+    private float totalScore;
+    private int currentCustomerNumber;
 
     private void Awake()
     {
@@ -53,6 +64,8 @@ public class IngredientManager : MonoBehaviour
 
     public void NewCustomer()
     {
+        currentCustomerNumber++;
+
         for (int i = 0; i < spawnedIngredients.Count; i++)
         {
             Destroy(spawnedIngredients[i].gameObject);
@@ -66,30 +79,42 @@ public class IngredientManager : MonoBehaviour
         draggableIngredients.Clear();
 
         desiredIngredients.Clear();
+        chosenIngredients.Clear();
 
-        List<Ingredient> ingredientsLeft = new List<Ingredient>(allIngredients);
-        int countLeft = ingredientCount;
-        while(countLeft > 0 && ingredientsLeft.Count > 0)
+        for(int i = 0; i < ingredientCount; i++)
         {
-            countLeft--;
-
-            int randomIndex = Random.Range(0, ingredientsLeft.Count);
-            Ingredient ingredient = ingredientsLeft[randomIndex];
-            ingredientsLeft.RemoveAt(randomIndex);
+            int categorhyNumber = i + 1;
+            List<Ingredient> availableIngredients = allIngredients.FindAll(x => x.CategoryNumber == categorhyNumber);
+            Ingredient ingredient = availableIngredients[Random.Range(0, availableIngredients.Count)];
             desiredIngredients.Add(ingredient);
         }
+
+        thoughtBubble.ShowDesiredIngredients(desiredIngredients);
 
         SpawnDraggableIngredients();
     }
 
-    public void SpawnIngredient(Ingredient ingredient)
+    public void SpawnIngredient(DraggableIngredient draggableIngredient)
     {
-        StartCoroutine(SpawnIngredients(ingredient));
+        draggableIngredients.Remove(draggableIngredient);
+        if (chosenIngredients.Count >= desiredIngredients.Count)
+        {
+            // Already enough ingredients
+            return;
+        }
+
+        StartCoroutine(SpawnIngredients(draggableIngredient.Ingredient));
+
+        chosenIngredients.Add(draggableIngredient.Ingredient);
+        if (chosenIngredients.Count >= desiredIngredients.Count)
+        {
+            StartCoroutine(ShowResult());
+        }
     }
 
     private void SpawnDraggableIngredients()
     {
-        for(int i = 0; i < allIngredients.Count; i++)
+        for (int i = 0; i < allIngredients.Count; i++)
         {
             Ingredient ingredient = allIngredients[i];
             Vector3 spawnPosition = ingredientDraggableZone.position + new Vector3(Random.Range(-draggableZoneSize.x / 2, draggableZoneSize.x / 2), Random.Range(-draggableZoneSize.y / 2, draggableZoneSize.y / 2), 0);
@@ -99,16 +124,60 @@ public class IngredientManager : MonoBehaviour
         }
     }
 
+    private float CalculateCorrectness()
+    {
+        if(desiredIngredients.Count == 0)
+        {
+            return 0;
+        }
+
+        int correctCount = 0;
+        for(int i = 0; i < desiredIngredients.Count; i++)
+        {
+            Ingredient desiredIngredient = desiredIngredients[i];
+            if(chosenIngredients.Contains(desiredIngredient))
+            {
+                correctCount++;
+            }
+        }
+
+        return (float)correctCount / (float)desiredIngredients.Count;
+    }
+
     private IEnumerator SpawnIngredients(Ingredient ingredient)
     {
-        for(int i = 0; i < ingredient.Amount; i++)
+        for (int i = 0; i < ingredient.Amount; i++)
         {
             Vector3 spawnPosition = ingredientSpawnZone.position + new Vector3(Random.Range(-spawnZoneSize.x / 2, spawnZoneSize.x / 2), Random.Range(-spawnZoneSize.y / 2, spawnZoneSize.y / 2), 0);
             float scale = 1 + Random.Range(-ingredient.ScaleRandomness, ingredient.ScaleRandomness);
-            GameObject newSpawnedIngredient = Instantiate(ingredient.SpawnedIngredient, spawnPosition, Quaternion.Euler(0, 0, Random.Range(-180.0f, 180.0f)));
+            Quaternion rotation = ingredient.AllowRotation ? Quaternion.Euler(0, 0, Random.Range(-180.0f, 180.0f)) : Quaternion.identity;
+            GameObject newSpawnedIngredient = Instantiate(ingredient.SpawnedIngredient, spawnPosition, rotation);
             newSpawnedIngredient.transform.localScale *= scale;
             spawnedIngredients.Add(newSpawnedIngredient);
             yield return new WaitForSeconds(ingredient.DelayPerSpawn);
+        }
+    }
+
+    private IEnumerator ShowResult()
+    {
+        float correctness = CalculateCorrectness();
+        bool isCorrectDrink = correctness > 0.999f;
+        totalScore += correctness;
+
+        yield return new WaitForSeconds(finishDelayBeforeDialogue);
+
+        // TODO Dialogue here
+
+        yield return new WaitForSeconds(finishDelayAfterDialogue);
+
+        if (currentCustomerNumber >= customerCount)
+        {
+            float finalScore = totalScore / customerCount;
+            finalPanel.Show(finalScore);
+        }
+        else
+        {
+            NewCustomer();
         }
     }
 }

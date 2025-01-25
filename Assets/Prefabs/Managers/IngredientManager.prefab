@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4749915573543184676}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: -0.022979297}
+  m_LocalPosition: {x: 0, y: -3.31, z: -0.022979297}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,13 +79,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allIngredients:
   - {fileID: 11400000, guid: 353673764484ff144954540ef9eda414, type: 2}
+  - {fileID: 11400000, guid: be800f524b2e73e4686044e223e5234c, type: 2}
+  - {fileID: 11400000, guid: 6e312c11276a6934994e7bed0bdee9d0, type: 2}
+  - {fileID: 11400000, guid: 86087e84a0ba58f46897d9b2f2b444ee, type: 2}
+  - {fileID: 11400000, guid: 2a7771c3afa41204bb5a218002c4bf6e, type: 2}
+  - {fileID: 11400000, guid: a60159e8a1fb3a24cb0075d641e552d2, type: 2}
+  - {fileID: 11400000, guid: 487d3ce09f5f3da43b251a20bf587abc, type: 2}
+  - {fileID: 11400000, guid: 9882b3d1891fed54c8c4ccbc492d4fae, type: 2}
+  - {fileID: 11400000, guid: 79fc2efa91a9ac540b628cbef9f7705f, type: 2}
+  - {fileID: 11400000, guid: 7bcb923362925e34d9996b7de1317967, type: 2}
   ingredientCount: 5
+  finishDelayBeforeDialogue: 2
+  finishDelayAfterDialogue: 5
+  customerCount: 3
   thoughtBubble: {fileID: 0}
+  finalPanel: {fileID: 0}
   draggableIngredientTemplate: {fileID: 5081500389751010937, guid: 8f9c3bfad99257747845fbad1e26a503, type: 3}
   ingredientSpawnZone: {fileID: 5747263542295843863}
   spawnZoneSize: {x: 2, y: 1}
   ingredientDraggableZone: {fileID: 745754656742593793}
-  draggableZoneSize: {x: 10, y: 2}
+  draggableZoneSize: {x: 13, y: 1}
 --- !u!1 &8618219508781200592
 GameObject:
   m_ObjectHideFlags: 0
