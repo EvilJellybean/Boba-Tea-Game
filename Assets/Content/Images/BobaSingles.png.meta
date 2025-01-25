@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BobaSingles_0: 7955560536456438329
+      BobaSingles_1: 6004085334169056419
+      BobaSingles_2: 7863734799060867785
+      BobaSingles_3: 6065525987603843450
+      BobaSingles_4: 7791858531431219678
+      BobaSingles_5: -8371039915596139248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

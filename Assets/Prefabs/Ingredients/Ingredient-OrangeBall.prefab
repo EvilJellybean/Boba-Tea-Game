@@ -78,8 +78,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.84313726, g: 0.52704763, b: 0.13333333, a: 1}
+  m_Sprite: {fileID: 6065525987603843450, guid: 559d2d6bd925ee14da52ed506b39e0a3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -115,7 +115,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &731466787470961948
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: fc780aeb4ab243a4ba914ddc8d0aecab, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
