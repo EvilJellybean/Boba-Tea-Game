@@ -6,13 +6,27 @@ public class DraggableIngredient : MonoBehaviour
 
     [SerializeField]
     private LayerMask draggableAreaLayer;
+    [SerializeField]
+    private SpriteRenderer icon;
+
+    [SerializeField]
+    private Ingredient testIngredient;
 
     private Camera mainCamera;
     private Vector2 lastMousePosition;
 
+    public Ingredient Ingredient { get; private set; }
+
     private void Awake()
     {
         mainCamera = Camera.main;
+        Configure(testIngredient);
+    }
+
+    public void Configure(Ingredient ingredient)
+    {
+        Ingredient = ingredient;
+        icon.sprite = ingredient.ThoughtBubbleImage;
     }
 
     private void OnMouseDown()
@@ -34,7 +48,8 @@ public class DraggableIngredient : MonoBehaviour
         int hitCount = Physics.OverlapSphereNonAlloc(transform.position, 0.1f, results, draggableAreaLayer, QueryTriggerInteraction.Collide);
         if(hitCount > 0 )
         {
-            Debug.Log("Dragged to area");
+            IngredientManager.Instance.SpawnIngredient(Ingredient);
+            Destroy(gameObject);
         }
     }
 }
