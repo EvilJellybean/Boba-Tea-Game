@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107fa0858ac8b334cb2e1239409784f6, type: 3}
+  m_Name: Customer-Ducks-SheldonAndPete
+  m_EditorClassIdentifier: 
+  Image: {fileID: 21300000, guid: b5bd70fb1e4be1541a57e654c851d572, type: 3}
+  CustomerName: Sheldon and Pete
+  RandomDialogue:
+  - Me and Pete will share a tea thanks. We don't want to spoil our appetite for
+    dinner!
+  - I'm really in the mood for something with Duckweed, maybe something milky? I
+    have every faith in you!
+  - You know what we are feeling adventurous. Make us a drink you think I'll like,
+    I trust you luv!
+  - Phew! Warm day, feeling really crispy out there. We could really do with some
+    icy boba my dear!
+  - I feel like a surprise tea today. Dont worry im not peeking!
+  - This is just the type of place we like to see while out and about. Do you think
+    you can avoid the citrus flavours?
+  CorrectDrinkDialogue:
+  - Chookers! Luv, this is just the trick!
+  - I can't believe we are so lucky to have you here in the neighbourhood. This is
+    great!
+  - Hmm now this is great! You can really taste the pond!
+  - How do you get the pearls to stay at the bottom? You must be so clever!
+  - Don't you change a thing about this! Can this be my regular?
+  - Next time we are here make sure whatever you did today, you do the same thing!
+    Fabulous!
+  IncorrectDrinkDialogue:
+  - What do you think dear? Doesn't quite hit the spot does it!
+  - This reminds me of when Sheldon's mum made grape trifle for our anniversary.
+    That's not a compliment darling!
+  - 'Well so long as you are trying love! I''ve never been a fan of flavours like
+    orange. '
+  - I'll be confit before I try that again!
+  - 'Sheldon''s Mum would probably like this place. She''s never had very good taste. '
+  - Oh bless your heart! You must be trying so hard, don't give up, you'll get there.

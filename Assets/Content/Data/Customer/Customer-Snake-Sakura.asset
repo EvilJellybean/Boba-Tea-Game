@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107fa0858ac8b334cb2e1239409784f6, type: 3}
+  m_Name: Customer-Snake-Sakura
+  m_EditorClassIdentifier: 
+  Image: {fileID: 21300000, guid: 75c48bff439fdd04d8e894ab6ee153f2, type: 3}
+  CustomerName: Chicken
+  RandomDialogue:
+  - Konichiwa! OMG these drinks are sooo Kawaii! I'll have one and make it extra
+    sweet desu!
+  - Osu! I cant believe today, my friends are saying im weird. I need a treat to
+    feel better.
+  - Ohai! I need a drink to pick me up today! Please make it kawaii for meee!
+  - I've decided to start Japanese lessons again! I need a fruity drink to help me
+    study!
+  - This reminds me of when I went to Nipon, that's how they say Japan in Nipon!
+    One bubble tea mas!
+  - "Konnichiwa! Baburut\u012B o itadakemasu ka? Did I get it right? "
+  CorrectDrinkDialogue:
+  - 'Wow! You make these soo oshi! Sorry, that means tasty! '
+  - Ahhh! Alligator! That means "thank you" in Japanese!
+  - MMM! This is so kawaii des!
+  - "This tastes just like my favorite anime! Shinpi no mori \u200B\u200Bno fur\u016Bt\u012Bg\u0101ru!
+    Have you watched it?"
+  - This makes me feel like a really Magic Girl!
+  - You make such a good drink here! You should go to Japan and open a shop there.
+  IncorrectDrinkDialogue:
+  - Oh, maybe too sweet, I don't think I can finish this!
+  - 'Baka! I can''t drink this! '
+  - This is so not kawaii! Do you even know what that means?
+  - This makes me kanashi! WAAAH!
+  - Your drink shows you have no honour, you have made a mortal enemy today! See
+    you next time!
+  - This is so not oishi des ka. I know you can do better than this.

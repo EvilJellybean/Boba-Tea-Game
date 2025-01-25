@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107fa0858ac8b334cb2e1239409784f6, type: 3}
+  m_Name: Customer-Ibis-Kip
+  m_EditorClassIdentifier: 
+  Image: {fileID: 21300000, guid: 75c48bff439fdd04d8e894ab6ee153f2, type: 3}
+  CustomerName: Kip
+  RandomDialogue:
+  - I don't suppose you could rustle us up something to give us some energy? I like
+    em big and cold!
+  - Wheww! It's a hot one today let me tell you. Can really smell the opportunities
+    out there. A nice cold tea sounds good!
+  - I tell you it's getting hard these days with all the eco consciousness and recycling
+    going on. I'll have a large one ta!
+  - I need something strong to give me energy to maximize my strategies!
+  - Can you make me a good business drink? I'm a big name in waste management and
+    resource reclamation around these parts!
+  - Ready to hustle and grind the day into bread young'un? I need a drink before
+    I go get this bread
+  CorrectDrinkDialogue:
+  - This should keep me going, it gets bloody hot in those dumps... er offices ya
+    know? Cheers buddy!
+  - This beats the time I found that half tin of sardines! You keep up the good work
+    eh?
+  - Cheers! You make em just the way I like!
+  - Hah, with this those wheelie bins don't stand a chance!
+  - Wow. This might just be my new favorite!  You are really synergizing the hell
+    out things here!
+  - Now that is boba, bubby! You are my white knight!
+  IncorrectDrinkDialogue:
+  - Oh, I've never been that keen on this! Well not everyone can be a winner eh?
+  - 'Don''t know how you mess that up but you made it happen! '
+  - Pretty sure i've tasted this on the worksite before. Didn't like it then either!
+  - I'm sure you'll kick it out of the park next time!
+  - This taste like my last fiscal quarter. Ooof!
+  - This tastes like the kind of paradigm I can't dive into bud!
