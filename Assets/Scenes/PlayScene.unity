@@ -2732,8 +2732,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 50
-  m_Sprite: {fileID: -5538602517941068487, guid: 8f6b0e5881407df43a41ec1645f705aa, type: 3}
+  m_SortingOrder: 100
+  m_Sprite: {fileID: 2182932554613511168, guid: c3b2e4f64b430064e89d7fe9c5d35279, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2753,8 +2753,8 @@ Transform:
   m_GameObject: {fileID: 1913146790}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.97, y: -2.77, z: 0}
-  m_LocalScale: {x: 0.7, y: 1.5, z: 0.7}
+  m_LocalPosition: {x: -0.97, y: -2.77, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2772,8 +2772,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisRenderer: {fileID: 1913146791}
-  frogHandOpen: {fileID: -5538602517941068487, guid: 8f6b0e5881407df43a41ec1645f705aa, type: 3}
-  frogHandClosed: {fileID: -8158003563818110672, guid: 191118fd999df064fa4e4cbbf50b47a6, type: 3}
+  frogHandOpen: {fileID: 2182932554613511168, guid: c3b2e4f64b430064e89d7fe9c5d35279, type: 3}
+  frogHandClosed: {fileID: -781858451600644474, guid: 35ab8819e556d5c4f9700eb981c024db, type: 3}
+  vibrateAmount: 0.02
 --- !u!1 &1950644664
 GameObject:
   m_ObjectHideFlags: 0
