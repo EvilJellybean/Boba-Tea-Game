@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
   m_Name: Ingredient-Ball-Green
   m_EditorClassIdentifier: 
-  ThoughtBubbleImage: {fileID: 21300000, guid: 0c47ed9af2641a54d9116888b650d6b5, type: 3}
+  ThoughtBubbleImage: {fileID: 21300000, guid: 3e453065be0082e46ac8f54cbc561913, type: 3}
   PacketImage: {fileID: 1677443721670599359, guid: 17ef782f20b64624bb174c6c363024ec, type: 3}
   SpawnedIngredient: {fileID: 8136808525521607368, guid: f488b826d5682a3498df5dc725fe4773, type: 3}
   CategoryNumber: 2

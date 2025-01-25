@@ -61,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      InCup_Ingredients-BlackBoba_0: 8407163587445101622
+      InCup_Ingredients-BlackBoba_1: -6224799531286120657
+      InCup_Ingredients-BlackBoba_2: -1074640529711804889
+      InCup_Ingredients-BlackBoba_3: -2516425847607157904
+      InCup_Ingredients-BlackBoba_4: 7689162069223972331
+      InCup_Ingredients-BlackBoba_5: -2138563458957258941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

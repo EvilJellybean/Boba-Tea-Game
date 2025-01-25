@@ -61,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      InCup_Ingredients-OrangeBoba_0: 8267263255065478629
+      InCup_Ingredients-OrangeBoba_1: 7036543002510589402
+      InCup_Ingredients-OrangeBoba_2: -8881551075417439409
+      InCup_Ingredients-OrangeBoba_3: -1938546705205526252
+      InCup_Ingredients-OrangeBoba_4: -160796138254504227
+      InCup_Ingredients-OrangeBoba_5: 3604510027499231870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
