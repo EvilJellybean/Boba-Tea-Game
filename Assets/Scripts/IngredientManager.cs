@@ -81,15 +81,11 @@ public class IngredientManager : MonoBehaviour
         desiredIngredients.Clear();
         chosenIngredients.Clear();
 
-        List<Ingredient> ingredientsLeft = new List<Ingredient>(allIngredients);
-        int countLeft = ingredientCount;
-        while (countLeft > 0 && ingredientsLeft.Count > 0)
+        for(int i = 0; i < ingredientCount; i++)
         {
-            countLeft--;
-
-            int randomIndex = Random.Range(0, ingredientsLeft.Count);
-            Ingredient ingredient = ingredientsLeft[randomIndex];
-            ingredientsLeft.RemoveAt(randomIndex);
+            int categorhyNumber = i + 1;
+            List<Ingredient> availableIngredients = allIngredients.FindAll(x => x.CategoryNumber == categorhyNumber);
+            Ingredient ingredient = availableIngredients[Random.Range(0, availableIngredients.Count)];
             desiredIngredients.Add(ingredient);
         }
 
