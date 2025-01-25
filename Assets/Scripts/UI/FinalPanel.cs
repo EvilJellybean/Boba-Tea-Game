@@ -26,10 +26,10 @@ public class FinalPanel : MonoBehaviour
         restartButton.onClick.RemoveListener(RestartGame);
     }
 
-    public void Show(float scorePercent)
+    public void Show()
     {
         gameObject.SetActive(true);
-        score.text = Mathf.Round(scorePercent * 100).ToString() + "%";
+        score.text = Mathf.Round(CustomerManager.Instance.FinalScore * 100).ToString() + "%";
     }
 
     private void RestartGame()

@@ -15,12 +15,9 @@ public class IngredientManager : MonoBehaviour
     private float finishDelayBeforeDialogue = 2;
     [SerializeField]
     private float finishDelayAfterDialogue = 5;
-    [SerializeField]
-    private int customerCount = 5;
+    
     [SerializeField]
     private ThoughtBubble thoughtBubble;
-    [SerializeField]
-    private FinalPanel finalPanel;
     [SerializeField]
     private DraggableIngredient draggableIngredientTemplate;
 
@@ -42,18 +39,13 @@ public class IngredientManager : MonoBehaviour
     private List<Ingredient> chosenIngredients = new List<Ingredient>();
     private List<DraggableIngredient> draggableIngredients = new List<DraggableIngredient>();
     private List<GameObject> spawnedIngredients = new List<GameObject>();
-    private float totalScore;
-    private int currentCustomerNumber;
+    public float TotalScore { get; private set; }
+    
+    
 
     private void Awake()
     {
         instance = this;
-    }
-
-    // TODO Probably put customer sequencing into a different script
-    private void Start()
-    {
-        NewCustomer();
     }
 
     private void OnDrawGizmos()
@@ -62,10 +54,8 @@ public class IngredientManager : MonoBehaviour
         Gizmos.DrawWireCube(ingredientDraggableZone.position, draggableZoneSize);
     }
 
-    public void NewCustomer()
+    public void CreateNewDrinkOrder()
     {
-        currentCustomerNumber++;
-
         for (int i = 0; i < spawnedIngredients.Count; i++)
         {
             Destroy(spawnedIngredients[i].gameObject);
@@ -162,22 +152,14 @@ public class IngredientManager : MonoBehaviour
     {
         float correctness = CalculateCorrectness();
         bool isCorrectDrink = correctness > 0.999f;
-        totalScore += correctness;
+        TotalScore += correctness;
 
         yield return new WaitForSeconds(finishDelayBeforeDialogue);
 
-        // TODO Dialogue here
+        CustomerManager.Instance.ShowFinalDialogue(isCorrectDrink);
 
         yield return new WaitForSeconds(finishDelayAfterDialogue);
 
-        if (currentCustomerNumber >= customerCount)
-        {
-            float finalScore = totalScore / customerCount;
-            finalPanel.Show(finalScore);
-        }
-        else
-        {
-            NewCustomer();
-        }
+        CustomerManager.Instance.NextCustomer();
     }
 }
