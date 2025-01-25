@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ingredient-Ball-Yellow
   m_EditorClassIdentifier: 
   ThoughtBubbleImage: {fileID: 21300000, guid: ee707d8d8a68d8642a4f166bac46e54a, type: 3}
-  PacketImage: {fileID: 6004085334169056419, guid: 559d2d6bd925ee14da52ed506b39e0a3, type: 3}
+  PacketImage: {fileID: -9057840043801427148, guid: 17ef782f20b64624bb174c6c363024ec, type: 3}
   SpawnedIngredient: {fileID: 8136808525521607368, guid: 92e1a4a60f75dd946a6a39ed323337e5, type: 3}
   CategoryNumber: 2
   Amount: 7

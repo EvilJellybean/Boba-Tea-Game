@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThoughtBubbleImage: {fileID: 21300000, guid: 87e02db391a77a34b844f1727cdcf6f4, type: 3}
   PacketImage: {fileID: 2466490646307085749, guid: 39d0f56e6bd399f47853231f830410a4, type: 3}
-  SpawnedIngredient: {fileID: 8136808525521607368, guid: 33720acf9f67f0e4f8d2ea1b13cfe726, type: 3}
+  SpawnedIngredient: {fileID: 8136808525521607368, guid: 8d2273cc90d5a6844a32704c6a42079f, type: 3}
   CategoryNumber: 5
   Amount: 1
   DelayPerSpawn: 0.1
