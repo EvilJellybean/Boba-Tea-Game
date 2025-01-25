@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
   m_Name: Ingredient-Foam-Cocoa
   m_EditorClassIdentifier: 
-  ThoughtBubbleImage: {fileID: 21300000, guid: fe9bb386392600d43a7bc8a6eca1720a, type: 3}
+  ThoughtBubbleImage: {fileID: -4498399561785514603, guid: 18c8b5fbdac46844abc26db02fde0376, type: 3}
   PacketImage: {fileID: -2438468154763301830, guid: a9c488dc4006e814db9ba95cc83f4161, type: 3}
   SpawnedIngredient: {fileID: 8136808525521607368, guid: 9a2f59330d2c90c4f8d46ce3d3fa1220, type: 3}
   CategoryNumber: 4

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
   m_Name: Ingredient-Foam-Green
   m_EditorClassIdentifier: 
-  ThoughtBubbleImage: {fileID: 21300000, guid: fe9bb386392600d43a7bc8a6eca1720a, type: 3}
+  ThoughtBubbleImage: {fileID: -2388250374633533551, guid: e6d05ef4501a53145985869ad9e5406d, type: 3}
   PacketImage: {fileID: -3723146863403884618, guid: a9c488dc4006e814db9ba95cc83f4161, type: 3}
   SpawnedIngredient: {fileID: 8136808525521607368, guid: 6c157942a57b6a444b808189686b8698, type: 3}
   CategoryNumber: 4
