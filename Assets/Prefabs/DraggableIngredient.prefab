@@ -51,6 +51,7 @@ MonoBehaviour:
   draggableAreaLayer:
     serializedVersion: 2
     m_Bits: 64
+  packetSprite: {fileID: 1340036898391374797}
   icon: {fileID: 8097320823502201413}
 --- !u!212 &1340036898391374797
 SpriteRenderer:

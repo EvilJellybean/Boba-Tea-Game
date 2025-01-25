@@ -109,7 +109,7 @@ public class IngredientManager : MonoBehaviour
             Ingredient ingredient = allIngredients[i];
             Vector3 spawnPosition = ingredientDraggableZone.position + new Vector3(Random.Range(-draggableZoneSize.x / 2, draggableZoneSize.x / 2), Random.Range(-draggableZoneSize.y / 2, draggableZoneSize.y / 2), 0);
             DraggableIngredient newDraggableIngredient = Instantiate(draggableIngredientTemplate, spawnPosition, Quaternion.identity);
-            newDraggableIngredient.Configure(ingredient);
+            newDraggableIngredient.Configure(ingredient, i+1);
             draggableIngredients.Add(newDraggableIngredient);
         }
     }

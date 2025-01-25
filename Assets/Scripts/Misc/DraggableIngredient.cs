@@ -7,6 +7,8 @@ public class DraggableIngredient : MonoBehaviour
     [SerializeField]
     private LayerMask draggableAreaLayer;
     [SerializeField]
+    private SpriteRenderer packetSprite;
+    [SerializeField]
     private SpriteRenderer icon;
 
     private Camera mainCamera;
@@ -19,9 +21,15 @@ public class DraggableIngredient : MonoBehaviour
         mainCamera = Camera.main;
     }
 
-    public void Configure(Ingredient ingredient)
+    public void Configure(Ingredient ingredient, int ingredientNumber)
     {
         Ingredient = ingredient;
+
+        Vector3 newPosition = transform.position;
+        newPosition.z = -ingredientNumber * 0.01f;
+        transform.position = newPosition;
+        packetSprite.sortingOrder = 2 + ingredientNumber * 2;
+        icon.sortingOrder = 2 + ingredientNumber * 2 + 1;
         icon.sprite = ingredient.PacketImage;
     }
 
