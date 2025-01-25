@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ToppingSingles_0
+      name: ToppingSingles_Ice
       rect:
         serializedVersion: 2
         x: 37
@@ -123,7 +123,7 @@ TextureImporter:
         width: 132
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,7 +137,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingSingles_1
+      name: ToppingSingles_Lillypilly
       rect:
         serializedVersion: 2
         x: 210
@@ -145,7 +145,7 @@ TextureImporter:
         width: 101
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingSingles_2
+      name: ToppingSingles_Lemongrass
       rect:
         serializedVersion: 2
         x: 363
@@ -167,7 +167,7 @@ TextureImporter:
         width: 104
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingSingles_3
+      name: ToppingSingles_Passionfruit
       rect:
         serializedVersion: 2
         x: 63
@@ -189,7 +189,7 @@ TextureImporter:
         width: 59
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,7 +203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingSingles_4
+      name: ToppingSingles_Adzukibean
       rect:
         serializedVersion: 2
         x: 226
@@ -211,7 +211,7 @@ TextureImporter:
         width: 56
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,7 +225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingSingles_5
+      name: ToppingSingles_Saltbush
       rect:
         serializedVersion: 2
         x: 374
@@ -233,7 +233,7 @@ TextureImporter:
         width: 95
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6438ee80d71bcdf4fb5543f990be2219
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ToppingSingles_0: 5293082120207103016
-      ToppingSingles_1: -4833589518161892546
-      ToppingSingles_2: -4465250080223553086
-      ToppingSingles_3: 4965891652735330449
-      ToppingSingles_4: 6215564963880953751
-      ToppingSingles_5: -8902690188573350552
+      ToppingSingles_Adzukibean: 6215564963880953751
+      ToppingSingles_Ice: 5293082120207103016
+      ToppingSingles_Lemongrass: -4465250080223553086
+      ToppingSingles_Lillypilly: -4833589518161892546
+      ToppingSingles_Passionfruit: 4965891652735330449
+      ToppingSingles_Saltbush: -8902690188573350552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

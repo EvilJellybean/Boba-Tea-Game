@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 559d2d6bd925ee14da52ed506b39e0a3
+guid: 17ef782f20b64624bb174c6c363024ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7955560536456438329
-    second: BobaSingles_0
+      213: 3619434612110762011
+    second: BobaTypes_0
   - first:
-      213: 6004085334169056419
-    second: BobaSingles_1
+      213: -9057840043801427148
+    second: BobaTypes_1
   - first:
-      213: 7863734799060867785
-    second: BobaSingles_2
+      213: 537568987510870044
+    second: BobaTypes_2
   - first:
-      213: 6065525987603843450
-    second: BobaSingles_3
+      213: -7152057999485705260
+    second: BobaTypes_3
   - first:
-      213: 7791858531431219678
-    second: BobaSingles_4
+      213: 1677443721670599359
+    second: BobaTypes_4
   - first:
-      213: -8371039915596139248
-    second: BobaSingles_5
+      213: -4540267140833257047
+    second: BobaTypes_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,133 +115,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BobaSingles_0
+      name: BobaTypes_Taro
       rect:
         serializedVersion: 2
-        x: 43
-        y: 370
-        width: 102
-        height: 102
+        x: 0
+        y: 347
+        width: 144
+        height: 147
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9322a945824d76e60800000000000000
-      internalID: 7955560536456438329
+      spriteID: b10ad966a90da3230800000000000000
+      internalID: 3619434612110762011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_1
+      name: BobaTypes_Mango
       rect:
         serializedVersion: 2
-        x: 206
-        y: 370
-        width: 102
-        height: 102
+        x: 166
+        y: 351
+        width: 142
+        height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a47748eccbc25350800000000000000
-      internalID: 6004085334169056419
+      spriteID: 43348ec78761c4280800000000000000
+      internalID: -9057840043801427148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_2
+      name: BobaTypes_Strawberry
       rect:
         serializedVersion: 2
-        x: 374
-        y: 371
-        width: 102
-        height: 102
+        x: 335
+        y: 347
+        width: 144
+        height: 142
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ca96e9c229912d60800000000000000
-      internalID: 7863734799060867785
+      spriteID: c101ade5524d57700800000000000000
+      internalID: 537568987510870044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_3
+      name: BobaTypes_Orange
       rect:
         serializedVersion: 2
-        x: 45
-        y: 225
-        width: 102
-        height: 102
+        x: 2
+        y: 198
+        width: 138
+        height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a79070bcfb31d2450800000000000000
-      internalID: 6065525987603843450
+      spriteID: 4d3e9a78429cebc90800000000000000
+      internalID: -7152057999485705260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_4
+      name: BobaTypes_Lime
       rect:
         serializedVersion: 2
-        x: 206
-        y: 223
-        width: 102
-        height: 102
+        x: 172
+        y: 188
+        width: 151
+        height: 142
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed10e022d0e322c60800000000000000
-      internalID: 7791858531431219678
+      spriteID: fb2a2e86d2a774710800000000000000
+      internalID: 1677443721670599359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BobaSingles_5
+      name: BobaTypes_Black
       rect:
         serializedVersion: 2
-        x: 365
-        y: 227
-        width: 102
-        height: 102
+        x: 344
+        y: 197
+        width: 142
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 015b6466c8714db80800000000000000
-      internalID: -8371039915596139248
+      spriteID: 9a9514d371bbdf0c0800000000000000
+      internalID: -4540267140833257047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingredient_Packet
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 208
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f8cc1e5d566364db7f20aa3d78518a
+      internalID: 1944904769
       vertices: []
       indices: 
       edges: []
@@ -250,7 +272,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 881f044286f6e2d4eb2985ad59cc6c78
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +282,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BobaSingles_0: 7955560536456438329
-      BobaSingles_1: 6004085334169056419
-      BobaSingles_2: 7863734799060867785
-      BobaSingles_3: 6065525987603843450
-      BobaSingles_4: 7791858531431219678
-      BobaSingles_5: -8371039915596139248
+      BobaTypes_Black: -4540267140833257047
+      BobaTypes_Lime: 1677443721670599359
+      BobaTypes_Mango: -9057840043801427148
+      BobaTypes_Orange: -7152057999485705260
+      BobaTypes_Strawberry: 537568987510870044
+      BobaTypes_Taro: 3619434612110762011
+      Ingredient_Packet: 1944904769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

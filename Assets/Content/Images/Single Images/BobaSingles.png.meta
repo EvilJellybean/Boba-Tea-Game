@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 6f1dc618d7bdb7e43b9e3a487a5b6264
+guid: 559d2d6bd925ee14da52ed506b39e0a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2512002747765574915
-    second: ToppingTypes_0
+      213: 7955560536456438329
+    second: BobaSingles_0
   - first:
-      213: -1258836507706050440
-    second: ToppingTypes_1
+      213: 6004085334169056419
+    second: BobaSingles_1
   - first:
-      213: -9067624680589516118
-    second: ToppingTypes_2
+      213: 7863734799060867785
+    second: BobaSingles_2
   - first:
-      213: -7484283326637372483
-    second: ToppingTypes_3
+      213: 6065525987603843450
+    second: BobaSingles_3
   - first:
-      213: -3220831546767855339
-    second: ToppingTypes_4
+      213: 7791858531431219678
+    second: BobaSingles_4
   - first:
-      213: -3148370073084621117
-    second: ToppingTypes_5
-  - first:
-      213: -732907611097914601
-    second: ToppingTypes_6
-  - first:
-      213: 6099780111553129053
-    second: ToppingTypes_7
+      213: -8371039915596139248
+    second: BobaSingles_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ToppingTypes_0
+      name: BobaSingles_Taro
       rect:
         serializedVersion: 2
-        x: 49
-        y: 343
-        width: 109
-        height: 148
+        x: 43
+        y: 370
+        width: 102
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df2b0a06fc2932dd0800000000000000
-      internalID: -2512002747765574915
+      spriteID: 9322a945824d76e60800000000000000
+      internalID: 7955560536456438329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_1
+      name: BobaSingles_Mango
       rect:
         serializedVersion: 2
-        x: 210
-        y: 364
-        width: 99
-        height: 94
+        x: 206
+        y: 370
+        width: 102
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87833e7add6b78ee0800000000000000
-      internalID: -1258836507706050440
+      spriteID: 3a47748eccbc25350800000000000000
+      internalID: 6004085334169056419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_4
+      name: BobaSingles_Strawberry
       rect:
         serializedVersion: 2
-        x: 371
-        y: 368
-        width: 84
-        height: 81
+        x: 374
+        y: 371
+        width: 102
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 511b78dd5ce4d43d0800000000000000
-      internalID: -3220831546767855339
+      spriteID: 9ca96e9c229912d60800000000000000
+      internalID: 7863734799060867785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_5
+      name: BobaSingles_Orange
       rect:
         serializedVersion: 2
-        x: 33
-        y: 212
-        width: 105
-        height: 96
+        x: 45
+        y: 225
+        width: 102
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ce025c691ebe44d0800000000000000
-      internalID: -3148370073084621117
+      spriteID: a79070bcfb31d2450800000000000000
+      internalID: 6065525987603843450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_6
+      name: BobaSingles_Lime
       rect:
         serializedVersion: 2
-        x: 207
-        y: 222
-        width: 91
-        height: 94
+        x: 206
+        y: 223
+        width: 102
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 713245b296034d5f0800000000000000
-      internalID: -732907611097914601
+      spriteID: ed10e022d0e322c60800000000000000
+      internalID: 7791858531431219678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToppingTypes_7
+      name: BobaSingles_Black
       rect:
         serializedVersion: 2
-        x: 360
-        y: 218
-        width: 115
-        height: 95
+        x: 365
+        y: 227
+        width: 102
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5aed1581b5c6a450800000000000000
-      internalID: 6099780111553129053
+      spriteID: 015b6466c8714db80800000000000000
+      internalID: -8371039915596139248
       vertices: []
       indices: 
       edges: []
@@ -256,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 89f0716c467c8df41a4069c090e948f8
+    spriteID: 0aab1a287e301b1409cc3bc2269daa89
     internalID: 0
     vertices: []
     indices: 
@@ -266,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ToppingTypes_0: -2512002747765574915
-      ToppingTypes_1: -1258836507706050440
-      ToppingTypes_4: -3220831546767855339
-      ToppingTypes_5: -3148370073084621117
-      ToppingTypes_6: -732907611097914601
-      ToppingTypes_7: 6099780111553129053
+      BobaSingles_Black: -8371039915596139248
+      BobaSingles_Lime: 7791858531431219678
+      BobaSingles_Mango: 6004085334169056419
+      BobaSingles_Orange: 6065525987603843450
+      BobaSingles_Strawberry: 7863734799060867785
+      BobaSingles_Taro: 7955560536456438329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
