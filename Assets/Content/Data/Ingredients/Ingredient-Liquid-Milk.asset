@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
-  m_Name: Ingredient-Foam-Blue
+  m_Name: Ingredient-Liquid-Milk
   m_EditorClassIdentifier: 
-  ThoughtBubbleImage: {fileID: 21300000, guid: 9f5a3303c907bb14a87c9490b215a695, type: 3}
-  PacketImage: {fileID: -8917444122381547946, guid: a9c488dc4006e814db9ba95cc83f4161, type: 3}
-  SpawnedIngredient: {fileID: 8136808525521607368, guid: 02e55a507909c5b4690b8042b02c8f3a, type: 3}
-  CategoryNumber: 4
-  Amount: 30
-  DelayPerSpawn: 0.01
+  ThoughtBubbleImage: {fileID: 21300000, guid: 700e90630fbdf154a84370d737a0a5ff, type: 3}
+  PacketImage: {fileID: -7994132929920590191, guid: 3f3993e55602d0c43af46f5cd257e020, type: 3}
+  SpawnedIngredient: {fileID: 8136808525521607368, guid: 3cf194025e3fc11498e35194d3614d83, type: 3}
+  CategoryNumber: 1
+  Amount: 400
+  DelayPerSpawn: 0.002
   ScaleRandomness: 0.25
   AllowRotation: 1
