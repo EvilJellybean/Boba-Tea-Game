@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e685520b84236d34ca15edc30cd6ad3e
+guid: e6d05ef4501a53145985869ad9e5406d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7232521027535748977
-    second: Cat_0
+      213: -2388250374633533551
+    second: InCup_Foam_Green_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cat_0
+      name: InCup_Foam_Green_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 473
-        height: 347
+        x: 87
+        y: 391
+        width: 340
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f80403be17ce0ab90800000000000000
-      internalID: -7232521027535748977
+      spriteID: 19f464110fa3bded0800000000000000
+      internalID: -2388250374633533551
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Cat_0: -7232521027535748977
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
