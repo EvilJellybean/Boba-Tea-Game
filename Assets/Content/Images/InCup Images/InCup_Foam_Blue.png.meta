@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      InCup_Foam_Blue_0: 7061572033031607445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

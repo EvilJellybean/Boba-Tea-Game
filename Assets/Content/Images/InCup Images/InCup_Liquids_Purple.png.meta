@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      InCup_Liquids_Purple_0: 3736673586825613310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

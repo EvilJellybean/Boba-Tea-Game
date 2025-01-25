@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      InCup_Liquids_Pink_0: 5833464647084467604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
