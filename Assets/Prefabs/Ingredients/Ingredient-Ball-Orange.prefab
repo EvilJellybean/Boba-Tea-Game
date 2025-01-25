@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1036369853174652230}
   - component: {fileID: 731466787470961948}
   m_Layer: 0
-  m_Name: Ingredient-GreenBall
+  m_Name: Ingredient-Ball-Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7791858531431219678, guid: 559d2d6bd925ee14da52ed506b39e0a3, type: 3}
+  m_Sprite: {fileID: 6065525987603843450, guid: 559d2d6bd925ee14da52ed506b39e0a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

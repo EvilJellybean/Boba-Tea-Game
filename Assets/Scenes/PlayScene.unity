@@ -1364,18 +1364,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5747263542295843863, guid: 77e6db27fb7fd784696cafdc0da21e74, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.83
-      objectReference: {fileID: 0}
     - target: {fileID: 6163114790507650794, guid: 77e6db27fb7fd784696cafdc0da21e74, type: 3}
       propertyPath: m_Name
       value: IngredientManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7423564413661401243, guid: 77e6db27fb7fd784696cafdc0da21e74, type: 3}
-      propertyPath: finalPanel
-      value: 
-      objectReference: {fileID: 1621261002}
     - target: {fileID: 7423564413661401243, guid: 77e6db27fb7fd784696cafdc0da21e74, type: 3}
       propertyPath: thoughtBubble
       value: 
