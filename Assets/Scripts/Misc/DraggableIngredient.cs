@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class DraggableIngredient : MonoBehaviour
 {
-    private static Collider[] results = new Collider[10];
-
     [SerializeField]
     private LayerMask draggableAreaLayer;
     [SerializeField]
@@ -77,8 +75,8 @@ public class DraggableIngredient : MonoBehaviour
 
     private void OnMouseUp()
     {
-        int hitCount = Physics.OverlapSphereNonAlloc(transform.position, 0.1f, results, draggableAreaLayer, QueryTriggerInteraction.Collide);
-        if(hitCount > 0 )
+        Collider2D result = Physics2D.OverlapCircle((Vector2)transform.position, 0.3f, draggableAreaLayer);
+        if(result != null)
         {
             IngredientManager.Instance.SpawnIngredient(this);
             Destroy(gameObject);
