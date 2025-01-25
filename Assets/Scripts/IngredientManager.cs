@@ -16,7 +16,11 @@ public class IngredientManager : MonoBehaviour
     [SerializeField]
     private float finishDelayAfterDialogue = 5;
     [SerializeField]
+    private int customerCount = 5;
+    [SerializeField]
     private ThoughtBubble thoughtBubble;
+    [SerializeField]
+    private FinalPanel finalPanel;
     [SerializeField]
     private DraggableIngredient draggableIngredientTemplate;
 
@@ -38,6 +42,8 @@ public class IngredientManager : MonoBehaviour
     private List<Ingredient> chosenIngredients = new List<Ingredient>();
     private List<DraggableIngredient> draggableIngredients = new List<DraggableIngredient>();
     private List<GameObject> spawnedIngredients = new List<GameObject>();
+    private float totalScore;
+    private int currentCustomerNumber;
 
     private void Awake()
     {
@@ -58,6 +64,8 @@ public class IngredientManager : MonoBehaviour
 
     public void NewCustomer()
     {
+        currentCustomerNumber++;
+
         for (int i = 0; i < spawnedIngredients.Count; i++)
         {
             Destroy(spawnedIngredients[i].gameObject);
@@ -120,6 +128,26 @@ public class IngredientManager : MonoBehaviour
         }
     }
 
+    private float CalculateCorrectness()
+    {
+        if(desiredIngredients.Count == 0)
+        {
+            return 0;
+        }
+
+        int correctCount = 0;
+        for(int i = 0; i < desiredIngredients.Count; i++)
+        {
+            Ingredient desiredIngredient = desiredIngredients[i];
+            if(chosenIngredients.Contains(desiredIngredient))
+            {
+                correctCount++;
+            }
+        }
+
+        return (float)correctCount / (float)desiredIngredients.Count;
+    }
+
     private IEnumerator SpawnIngredients(Ingredient ingredient)
     {
         for (int i = 0; i < ingredient.Amount; i++)
@@ -135,12 +163,24 @@ public class IngredientManager : MonoBehaviour
 
     private IEnumerator ShowResult()
     {
+        float correctness = CalculateCorrectness();
+        bool isCorrectDrink = correctness > 0.999f;
+        totalScore += correctness;
+
         yield return new WaitForSeconds(finishDelayBeforeDialogue);
 
         // TODO Dialogue here
 
         yield return new WaitForSeconds(finishDelayAfterDialogue);
 
-        NewCustomer();
+        if (currentCustomerNumber >= customerCount)
+        {
+            float finalScore = totalScore / customerCount;
+            finalPanel.Show(finalScore);
+        }
+        else
+        {
+            NewCustomer();
+        }
     }
 }
