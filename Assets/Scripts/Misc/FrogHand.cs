@@ -22,7 +22,7 @@ public class FrogHand : MonoBehaviour
     {
         Vector3 newPosition = (Vector2)camera.ScreenToWorldPoint(Input.mousePosition);
 
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButton(0))
         {
             newPosition += (Vector3)(Random.insideUnitCircle * vibrateAmount);
         }
