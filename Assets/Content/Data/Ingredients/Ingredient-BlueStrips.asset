@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Ingredient-BlueStrips
   m_EditorClassIdentifier: 
   ThoughtBubbleImage: {fileID: 21300000, guid: 07482292cb55cce408c4f2395da45a73, type: 3}
-  PacketImage: {fileID: 21300000, guid: 07482292cb55cce408c4f2395da45a73, type: 3}
+  PacketImage: {fileID: 21300000, guid: f2fba4434e553aa40b5c85fcefcf8d77, type: 3}
   SpawnedIngredient: {fileID: 8136808525521607368, guid: 2eb31322855a6c34fa73ab731b382643, type: 3}
   CategoryNumber: 3
   Amount: 3
   DelayPerSpawn: 0.25
   ScaleRandomness: 0.25
+  AllowRotation: 1
