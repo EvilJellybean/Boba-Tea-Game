@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CustomerManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class CustomerManager : MonoBehaviour
     [SerializeField]
     private SpeechBubble speechBubble;
     [SerializeField]
-    private SpriteRenderer customerImage;
+    private Image customerImage;
 
     private int currentCustomerNumber;
     private List<Customer> customersLeft = new List<Customer>();

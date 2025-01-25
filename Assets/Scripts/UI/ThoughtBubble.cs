@@ -1,14 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ThoughtBubble : MonoBehaviour
 {
     [SerializeField]
     private Transform spawnParent;
     [SerializeField]
-    private SpriteRenderer thoughtBubbleItemTemplate;
+    private Image thoughtBubbleItemTemplate;
 
-    private List<SpriteRenderer> spawnedBubbleItems = new List<SpriteRenderer>();
+    private List<Image> spawnedBubbleItems = new List<Image>();
 
     public void ShowDesiredIngredients(List<Ingredient> desiredIngredients)
     {
@@ -21,9 +22,8 @@ public class ThoughtBubble : MonoBehaviour
         for (int i = 0; i < desiredIngredients.Count; i++)
         {
             Ingredient ingredient = desiredIngredients[i];
-            SpriteRenderer newItem = Instantiate(thoughtBubbleItemTemplate, spawnParent);
+            Image newItem = Instantiate(thoughtBubbleItemTemplate, spawnParent);
             newItem.sprite = ingredient.ThoughtBubbleImage;
-            newItem.sortingOrder = 1 + ingredient.CategoryNumber;
             spawnedBubbleItems.Add(newItem);
         }
     }
