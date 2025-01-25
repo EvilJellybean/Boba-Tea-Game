@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ToppingSingles_0: 5293082120207103016
+      ToppingSingles_1: -4833589518161892546
+      ToppingSingles_2: -4465250080223553086
+      ToppingSingles_3: 4965891652735330449
+      ToppingSingles_4: 6215564963880953751
+      ToppingSingles_5: -8902690188573350552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

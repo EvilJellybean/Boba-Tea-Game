@@ -16,7 +16,7 @@ MonoBehaviour:
   PacketImage: {fileID: -7152057999485705260, guid: 17ef782f20b64624bb174c6c363024ec, type: 3}
   SpawnedIngredient: {fileID: 8136808525521607368, guid: 765c0b166b2776244ac9bcb74bd81f28, type: 3}
   CategoryNumber: 2
-  Amount: 3
+  Amount: 7
   DelayPerSpawn: 0.25
   ScaleRandomness: 0.25
   AllowRotation: 0

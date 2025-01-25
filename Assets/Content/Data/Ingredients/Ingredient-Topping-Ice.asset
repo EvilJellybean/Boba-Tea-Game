@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
-  m_Name: Ingredient-Ball-Green
+  m_Name: Ingredient-Topping-Ice
   m_EditorClassIdentifier: 
-  ThoughtBubbleImage: {fileID: 21300000, guid: 3e453065be0082e46ac8f54cbc561913, type: 3}
-  PacketImage: {fileID: 1677443721670599359, guid: 17ef782f20b64624bb174c6c363024ec, type: 3}
-  SpawnedIngredient: {fileID: 8136808525521607368, guid: f488b826d5682a3498df5dc725fe4773, type: 3}
-  CategoryNumber: 2
-  Amount: 7
+  ThoughtBubbleImage: {fileID: 21300000, guid: 6317ce7dabed3dd4f8785582ade13410, type: 3}
+  PacketImage: {fileID: 6099780111553129053, guid: 6f1dc618d7bdb7e43b9e3a487a5b6264, type: 3}
+  SpawnedIngredient: {fileID: 8136808525521607368, guid: 3ad7a5142a51d3b47b116741b6cb63a6, type: 3}
+  CategoryNumber: 3
+  Amount: 5
   DelayPerSpawn: 0.25
   ScaleRandomness: 0.25
-  AllowRotation: 0
+  AllowRotation: 1

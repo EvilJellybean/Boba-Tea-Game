@@ -84,14 +84,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7cf6575962ea1ba4cb10a0ec76c031f0, type: 2}
   - {fileID: 11400000, guid: 7c87c85b6728b884187b4f9ec1168238, type: 2}
   - {fileID: 11400000, guid: 1eb1b19058294344eb1c55b7c456b2af, type: 2}
-  - {fileID: 11400000, guid: 9882b3d1891fed54c8c4ccbc492d4fae, type: 2}
   - {fileID: 11400000, guid: 79fc2efa91a9ac540b628cbef9f7705f, type: 2}
-  - {fileID: 11400000, guid: 2a7771c3afa41204bb5a218002c4bf6e, type: 2}
-  - {fileID: 11400000, guid: a60159e8a1fb3a24cb0075d641e552d2, type: 2}
+  - {fileID: 11400000, guid: 9882b3d1891fed54c8c4ccbc492d4fae, type: 2}
   - {fileID: 11400000, guid: 487d3ce09f5f3da43b251a20bf587abc, type: 2}
   - {fileID: 11400000, guid: 7bcb923362925e34d9996b7de1317967, type: 2}
-  - {fileID: 11400000, guid: be800f524b2e73e4686044e223e5234c, type: 2}
+  - {fileID: 11400000, guid: 2a7771c3afa41204bb5a218002c4bf6e, type: 2}
   - {fileID: 11400000, guid: 86087e84a0ba58f46897d9b2f2b444ee, type: 2}
+  - {fileID: 11400000, guid: a60159e8a1fb3a24cb0075d641e552d2, type: 2}
+  - {fileID: 11400000, guid: be800f524b2e73e4686044e223e5234c, type: 2}
+  - {fileID: 11400000, guid: ffbf2f9438f21714b9f928bb5625935b, type: 2}
+  - {fileID: 11400000, guid: cdf9dce6eb72ade4ba96f5f2bbbbf54f, type: 2}
+  - {fileID: 11400000, guid: dd946d76c1cd0fc43997c9ff86eb1a32, type: 2}
+  - {fileID: 11400000, guid: 9086a793ff79b9e48a02ed760de20dca, type: 2}
   ingredientCount: 5
   finishDelayBeforeDialogue: 2
   finishDelayAfterDialogue: 5

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9f742fec7624794bba60e34655ba07c, type: 3}
-  m_Name: Ingredient-GreenStrips
+  m_Name: Ingredient-Topping-Lillypilly
   m_EditorClassIdentifier: 
-  ThoughtBubbleImage: {fileID: 21300000, guid: 8c6ab6602c37bbe419bfb5a45aace7c1, type: 3}
-  PacketImage: {fileID: 21300000, guid: cdd5c4ed2ebd3734d94a161e982f81c5, type: 3}
-  SpawnedIngredient: {fileID: 8136808525521607368, guid: 5c1529934eef03e4dbb92c358bbb8310, type: 3}
+  ThoughtBubbleImage: {fileID: 21300000, guid: c5ca59b23be738545a4b0b57a8138b89, type: 3}
+  PacketImage: {fileID: -732907611097914601, guid: 6f1dc618d7bdb7e43b9e3a487a5b6264, type: 3}
+  SpawnedIngredient: {fileID: 8136808525521607368, guid: 350dfd80cc3cafd499e66906b35cdedc, type: 3}
   CategoryNumber: 3
-  Amount: 3
+  Amount: 5
   DelayPerSpawn: 0.25
   ScaleRandomness: 0.25
   AllowRotation: 1
