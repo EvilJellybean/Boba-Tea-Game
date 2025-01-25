@@ -19,3 +19,4 @@ MonoBehaviour:
   Amount: 1
   DelayPerSpawn: 0.1
   ScaleRandomness: 0.25
+  AllowRotation: 0

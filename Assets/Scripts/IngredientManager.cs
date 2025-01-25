@@ -150,7 +150,8 @@ public class IngredientManager : MonoBehaviour
         {
             Vector3 spawnPosition = ingredientSpawnZone.position + new Vector3(Random.Range(-spawnZoneSize.x / 2, spawnZoneSize.x / 2), Random.Range(-spawnZoneSize.y / 2, spawnZoneSize.y / 2), 0);
             float scale = 1 + Random.Range(-ingredient.ScaleRandomness, ingredient.ScaleRandomness);
-            GameObject newSpawnedIngredient = Instantiate(ingredient.SpawnedIngredient, spawnPosition, Quaternion.Euler(0, 0, Random.Range(-180.0f, 180.0f)));
+            Quaternion rotation = ingredient.AllowRotation ? Quaternion.Euler(0, 0, Random.Range(-180.0f, 180.0f)) : Quaternion.identity;
+            GameObject newSpawnedIngredient = Instantiate(ingredient.SpawnedIngredient, spawnPosition, rotation);
             newSpawnedIngredient.transform.localScale *= scale;
             spawnedIngredients.Add(newSpawnedIngredient);
             yield return new WaitForSeconds(ingredient.DelayPerSpawn);
