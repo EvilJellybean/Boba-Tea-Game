@@ -22,7 +22,7 @@ public class DraggableIngredient : MonoBehaviour
     public void Configure(Ingredient ingredient)
     {
         Ingredient = ingredient;
-        icon.sprite = ingredient.ThoughtBubbleImage;
+        icon.sprite = ingredient.PacketImage;
     }
 
     private void OnMouseDown()
@@ -44,7 +44,7 @@ public class DraggableIngredient : MonoBehaviour
         int hitCount = Physics.OverlapSphereNonAlloc(transform.position, 0.1f, results, draggableAreaLayer, QueryTriggerInteraction.Collide);
         if(hitCount > 0 )
         {
-            IngredientManager.Instance.SpawnIngredient(Ingredient);
+            IngredientManager.Instance.SpawnIngredient(this);
             Destroy(gameObject);
         }
     }

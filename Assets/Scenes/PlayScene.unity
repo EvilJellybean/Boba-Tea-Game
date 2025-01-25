@@ -182,7 +182,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1b782ea5ff7926c47b75b5b92bc13a54, type: 3}
-  m_Color: {r: 1, g: 0.9880952, b: 0.9880952, a: 1}
+  m_Color: {r: 0.24528301, g: 0.23648983, b: 0.23648983, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -417,7 +417,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.83552146, g: 0.8613302, b: 0.90188676, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -780,7 +780,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.18, y: 2.81, z: 0}
-  m_LocalScale: {x: 0.9102948, y: 0.9102948, z: 0.9102948}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1056140004}
@@ -798,6 +798,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d25d32711a7364c8f8a9dd655e4911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnParent: {fileID: 1056140004}
+  thoughtBubbleItemTemplate: {fileID: 4841116078156348304, guid: 79114747a366a70468d04c267c2b649b, type: 3}
 --- !u!1001 &2472797453861208976
 PrefabInstance:
   m_ObjectHideFlags: 0

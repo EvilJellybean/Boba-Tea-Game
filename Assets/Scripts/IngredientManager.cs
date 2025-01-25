@@ -31,6 +31,7 @@ public class IngredientManager : MonoBehaviour
     private Vector2 draggableZoneSize;
 
     private List<Ingredient> desiredIngredients = new List<Ingredient>();
+    private List<Ingredient> chosenIngredients = new List<Ingredient>();
     private List<DraggableIngredient> draggableIngredients = new List<DraggableIngredient>();
     private List<GameObject> spawnedIngredients = new List<GameObject>();
 
@@ -66,10 +67,11 @@ public class IngredientManager : MonoBehaviour
         draggableIngredients.Clear();
 
         desiredIngredients.Clear();
+        chosenIngredients.Clear();
 
         List<Ingredient> ingredientsLeft = new List<Ingredient>(allIngredients);
         int countLeft = ingredientCount;
-        while(countLeft > 0 && ingredientsLeft.Count > 0)
+        while (countLeft > 0 && ingredientsLeft.Count > 0)
         {
             countLeft--;
 
@@ -79,17 +81,32 @@ public class IngredientManager : MonoBehaviour
             desiredIngredients.Add(ingredient);
         }
 
+        thoughtBubble.ShowDesiredIngredients(desiredIngredients);
+
         SpawnDraggableIngredients();
     }
 
-    public void SpawnIngredient(Ingredient ingredient)
+    public void SpawnIngredient(DraggableIngredient draggableIngredient)
     {
-        StartCoroutine(SpawnIngredients(ingredient));
+        draggableIngredients.Remove(draggableIngredient);
+        if (chosenIngredients.Count >= desiredIngredients.Count)
+        {
+            // Already enough ingredients
+            return;
+        }
+
+        StartCoroutine(SpawnIngredients(draggableIngredient.Ingredient));
+
+        chosenIngredients.Add(draggableIngredient.Ingredient);
+        if (chosenIngredients.Count >= desiredIngredients.Count)
+        {
+            StartCoroutine(ShowResult());
+        }
     }
 
     private void SpawnDraggableIngredients()
     {
-        for(int i = 0; i < allIngredients.Count; i++)
+        for (int i = 0; i < allIngredients.Count; i++)
         {
             Ingredient ingredient = allIngredients[i];
             Vector3 spawnPosition = ingredientDraggableZone.position + new Vector3(Random.Range(-draggableZoneSize.x / 2, draggableZoneSize.x / 2), Random.Range(-draggableZoneSize.y / 2, draggableZoneSize.y / 2), 0);
@@ -101,7 +118,7 @@ public class IngredientManager : MonoBehaviour
 
     private IEnumerator SpawnIngredients(Ingredient ingredient)
     {
-        for(int i = 0; i < ingredient.Amount; i++)
+        for (int i = 0; i < ingredient.Amount; i++)
         {
             Vector3 spawnPosition = ingredientSpawnZone.position + new Vector3(Random.Range(-spawnZoneSize.x / 2, spawnZoneSize.x / 2), Random.Range(-spawnZoneSize.y / 2, spawnZoneSize.y / 2), 0);
             float scale = 1 + Random.Range(-ingredient.ScaleRandomness, ingredient.ScaleRandomness);
@@ -110,5 +127,14 @@ public class IngredientManager : MonoBehaviour
             spawnedIngredients.Add(newSpawnedIngredient);
             yield return new WaitForSeconds(ingredient.DelayPerSpawn);
         }
+    }
+
+    private IEnumerator ShowResult()
+    {
+        // TODO Dialogue here
+
+        yield return new WaitForSeconds(2);
+
+        NewCustomer();
     }
 }

@@ -1,16 +1,28 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ThoughtBubble : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private Transform spawnParent;
+    [SerializeField]
+    private SpriteRenderer thoughtBubbleItemTemplate;
 
-    // Update is called once per frame
-    void Update()
+    private List<SpriteRenderer> spawnedBubbleItems = new List<SpriteRenderer>();
+
+    public void ShowDesiredIngredients(List<Ingredient> desiredIngredients)
     {
-        
+        for(int i = 0; i < spawnedBubbleItems.Count; i++)
+        {
+            Destroy(spawnedBubbleItems[i].gameObject);
+        }
+        spawnedBubbleItems.Clear();
+
+        for (int i = 0; i < desiredIngredients.Count; i++)
+        {
+            Ingredient ingredient = desiredIngredients[i];
+            SpriteRenderer newItem = Instantiate(thoughtBubbleItemTemplate, spawnParent);
+            newItem.sprite = ingredient.ThoughtBubbleImage;
+        }
     }
 }
