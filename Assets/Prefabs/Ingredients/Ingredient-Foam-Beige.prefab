@@ -167,3 +167,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: c4355081f3dd403409a11220fdfdefed, type: 3}
   pitchRandomness: 0.25
+  tagRequired: Liquid

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8099020921243052502}
   m_Layer: 7
   m_Name: Ingredient-Liquid-Purple
-  m_TagString: Untagged
+  m_TagString: Liquid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,3 +167,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 3ffd6d3acdf39f34dbecb3198b21b155, type: 3}
   pitchRandomness: 0.25
+  tagRequired: BobaCup

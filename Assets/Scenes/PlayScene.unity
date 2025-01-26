@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 300876846}
   m_Layer: 0
   m_Name: BobaCup
-  m_TagString: Untagged
+  m_TagString: BobaCup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2639,7 +2639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 1191841891}
   playOneAtATime: {fileID: 696026258}
-  playOneAtATimeInterval: 3
+  playOneAtATimeInterval: 6
 --- !u!1 &1267369572
 GameObject:
   m_ObjectHideFlags: 0
