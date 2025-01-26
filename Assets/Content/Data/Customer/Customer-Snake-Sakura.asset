@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 107fa0858ac8b334cb2e1239409784f6, type: 3}
   m_Name: Customer-Snake-Sakura
   m_EditorClassIdentifier: 
-  Image: {fileID: 3124736581514788659, guid: 3edd13a61b723184c953591a91273dfc, type: 3}
-  CustomerName: Chicken
+  Image: {fileID: 21300000, guid: 3edd13a61b723184c953591a91273dfc, type: 3}
+  CustomerName: Sakura
   RandomDialogue:
   - Konichiwa! OMG these drinks are sooo Kawaii! I'll have one and make it extra
     sweet desu!
