@@ -179,7 +179,7 @@ MonoBehaviour:
   playButton: {fileID: 4326594267967793783}
   creditsButton: {fileID: 7268464191298908503}
   quitButton: {fileID: 7276403667733568345}
-  playSceneName: PlayScene
+  playSceneName: StoryScene
 --- !u!223 &659207161430324448
 Canvas:
   m_ObjectHideFlags: 0
