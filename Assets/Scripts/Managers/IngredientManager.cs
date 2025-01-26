@@ -17,6 +17,8 @@ public class IngredientManager : MonoBehaviour
     private float finishDelayBeforeDialogue = 2;
     [SerializeField]
     private float finishDelayAfterDialogue = 5;
+    [SerializeField]
+    private GameObject cupAnimation;
     
     [SerializeField]
     private ThoughtBubble thoughtBubble;
@@ -60,6 +62,9 @@ public class IngredientManager : MonoBehaviour
     {
         ClearIngredients();
         ClearDraggableIngredients();
+
+        cupAnimation.SetActive(false);
+        cupAnimation.SetActive(true);
 
         desiredIngredients.Clear();
         chosenIngredients.Clear();
