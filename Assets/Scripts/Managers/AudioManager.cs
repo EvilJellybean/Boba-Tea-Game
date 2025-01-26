@@ -8,6 +8,12 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField]
     private AudioSource source;
+    [SerializeField]
+    private AudioSource playOneAtATime;
+    [SerializeField]
+    private float playOneAtATimeInterval = 3;
+
+    private float lastPlayed;
 
     private void Awake()
     {
@@ -18,5 +24,17 @@ public class AudioManager : MonoBehaviour
     {
         source.pitch = pitch;
         source.PlayOneShot(clip);
+    }
+
+    public void PlayOneAtATime(AudioClip clip, float pitch)
+    {
+        if(playOneAtATime.isPlaying || Time.time - lastPlayed < playOneAtATimeInterval)
+        {
+            return;
+        }
+        lastPlayed = Time.time;
+
+        playOneAtATime.pitch = pitch;
+        playOneAtATime.PlayOneShot(clip);
     }
 }
