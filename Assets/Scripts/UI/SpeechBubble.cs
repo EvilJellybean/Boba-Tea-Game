@@ -12,6 +12,11 @@ public class SpeechBubble : MonoBehaviour
 
     [SerializeField]
     private float delayPerCharacter = 0.02f;
+    [SerializeField]
+    private float sfxInterval = 0.1f;
+
+    [SerializeField]
+    private PlayRandomSfx playRandomSfx;
 
     [SerializeField]
     private CanvasGroup canvasGroup;
@@ -48,6 +53,8 @@ public class SpeechBubble : MonoBehaviour
 
         canvasGroup.alpha = 1;
 
+        float sfxIntervalLeft = 0;
+
         float totalTime = text.Length * delayPerCharacter;
         float t = 0;
         while (t < 1)
@@ -57,6 +64,13 @@ public class SpeechBubble : MonoBehaviour
             int characters = Mathf.RoundToInt(text.Length * t);
             string visibleText = text.Substring(0, characters);
             this.text.text = visibleText;
+
+            sfxIntervalLeft -= Time.deltaTime;
+            if(sfxIntervalLeft < 0)
+            {
+                sfxIntervalLeft = sfxInterval;
+                playRandomSfx.Play();
+            }
 
             yield return null;
         }
