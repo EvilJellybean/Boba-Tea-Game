@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private float playOneAtATimeInterval = 3;
 
-    private float lastPlayed;
+    private float lastPlayed = -100;
 
     private void Awake()
     {
