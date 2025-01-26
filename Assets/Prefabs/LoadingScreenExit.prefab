@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1554326357838312221}
-  loadDelay: 1
+  loadDelay: 0.7
 --- !u!223 &7147875478981655998
 Canvas:
   m_ObjectHideFlags: 0
