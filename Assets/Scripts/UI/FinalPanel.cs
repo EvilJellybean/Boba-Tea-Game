@@ -10,6 +10,10 @@ public class FinalPanel : MonoBehaviour
 
     [SerializeField]
     private Button restartButton;
+    [SerializeField]
+    private Button mainMenuButton;
+    [SerializeField]
+    private string mainMenuScene = "MainMenu";
 
     private void Awake()
     {
@@ -19,11 +23,13 @@ public class FinalPanel : MonoBehaviour
     private void OnEnable()
     {
         restartButton.onClick.AddListener(RestartGame);
+        mainMenuButton.onClick.AddListener(MainMenu);
     }
 
     private void OnDisable()
     {
         restartButton.onClick.RemoveListener(RestartGame);
+        mainMenuButton.onClick.RemoveListener(MainMenu);
     }
 
     public void Show()
@@ -35,5 +41,10 @@ public class FinalPanel : MonoBehaviour
     private void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void MainMenu()
+    {
+        SceneManager.LoadScene(mainMenuScene);
     }
 }
