@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 107fa0858ac8b334cb2e1239409784f6, type: 3}
   m_Name: Customer-Cat-Rosa
   m_EditorClassIdentifier: 
-  Image: {fileID: -7232521027535748977, guid: e685520b84236d34ca15edc30cd6ad3e, type: 3}
+  Image: {fileID: 21300000, guid: cf938cc0623e7c048b8a0d91806f83bd, type: 3}
   CustomerName: Rosa
   RandomDialogue:
   - I've heard you sell those.. special teas? I'll have one thank you darling! My

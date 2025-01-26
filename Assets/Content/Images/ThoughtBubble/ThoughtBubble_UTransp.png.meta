@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ThoughtBubble_UTransp_0: 5270918771536489630
+      ThoughtBubble_UTransp_1: -3778331770396003663
+      ThoughtBubble_UTransp_2: -6648529585523514644
+      ThoughtBubble_UTransp_3: 1716797320839300027
+      ThoughtBubble_UTransp_4: -5930428005546100125
+      ThoughtBubble_UTransp_5: 4242273597201904898
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
