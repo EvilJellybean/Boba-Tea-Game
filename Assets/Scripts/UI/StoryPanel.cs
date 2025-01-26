@@ -22,6 +22,6 @@ public class StoryPanel : MonoBehaviour
 
     private void Continue()
     {
-        SceneManager.LoadScene(playSceneName);
+        LoadingScreenExitPanel.Instance.LoadScene(playSceneName);
     }
 }
