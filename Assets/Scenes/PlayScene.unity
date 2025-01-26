@@ -1512,6 +1512,7 @@ GameObject:
   - component: {fileID: 870800865}
   - component: {fileID: 870800867}
   - component: {fileID: 870800866}
+  - component: {fileID: 870800868}
   m_Layer: 5
   m_Name: CustomerWalkAwayImage
   m_TagString: Untagged
@@ -1558,7 +1559,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c69b40a8f9af950428812538fa6ee0cd, type: 3}
+  m_Sprite: {fileID: 3124736581514788659, guid: 3edd13a61b723184c953591a91273dfc, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1576,6 +1577,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870800864}
   m_CullTransparentMesh: 1
+--- !u!95 &870800868
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870800864}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a71465550180f3b46bbf7e80fe6ba1b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &875041833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3804,6 +3827,10 @@ PrefabInstance:
       propertyPath: customerWalkInImage
       value: 
       objectReference: {fileID: 2023676902}
+    - target: {fileID: 3320700653441661678, guid: 3316ff90b05ffdd4985a1029512310e1, type: 3}
+      propertyPath: customerWalkOutImage
+      value: 
+      objectReference: {fileID: 870800866}
     - target: {fileID: 6254523243712475832, guid: 3316ff90b05ffdd4985a1029512310e1, type: 3}
       propertyPath: m_Name
       value: CustomerManager

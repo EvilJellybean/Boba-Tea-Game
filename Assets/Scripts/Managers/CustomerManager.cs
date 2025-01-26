@@ -17,6 +17,8 @@ public class CustomerManager : MonoBehaviour
     private SpeechBubble speechBubble;
     [SerializeField]
     private Image customerWalkInImage;
+    [SerializeField]
+    private Image customerWalkOutImage;
 
     private int currentCustomerNumber;
     private List<Customer> customersLeft = new List<Customer>();
@@ -27,6 +29,7 @@ public class CustomerManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        customerWalkOutImage.gameObject.SetActive(false);
     }
 
     private void Start()
@@ -48,6 +51,13 @@ public class CustomerManager : MonoBehaviour
             FinalScore = IngredientManager.Instance.TotalScore / customerCount;
             finalPanel.Show();
             return;
+        }
+
+        if(currentCustomer != null)
+        {
+            customerWalkOutImage.gameObject.SetActive(false);
+            customerWalkOutImage.gameObject.SetActive(true);
+            customerWalkOutImage.sprite = currentCustomer.Image;
         }
 
         int randomIndex = Random.Range(0, customersLeft.Count);
