@@ -3232,8 +3232,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 98783206468523360, guid: 3c67e285452fb22429ecfe99dc1efaad, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 98783206468523360, guid: 3c67e285452fb22429ecfe99dc1efaad, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 98783206468523360, guid: 3c67e285452fb22429ecfe99dc1efaad, type: 3}
       propertyPath: m_SortingOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 98783206468523360, guid: 3c67e285452fb22429ecfe99dc1efaad, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 501214374124056417, guid: 3c67e285452fb22429ecfe99dc1efaad, type: 3}
       propertyPath: m_Pivot.x
