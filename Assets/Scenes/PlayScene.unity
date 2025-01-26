@@ -1871,8 +1871,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.140182, y: 55.4011}
-  m_SizeDelta: {x: 465.7294, y: 200.0243}
+  m_AnchoredPosition: {x: 13.64, y: 46.84}
+  m_SizeDelta: {x: 433.28, y: 182.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1003682743
 MonoBehaviour:
@@ -1896,8 +1896,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dialogue Dialogue Dialogue Dialogue DialogueDialogue Dialogue DialogueDialogueDialogueDialogueDialogueDialogueDialogueDialogue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7eb6e4a40ef49da41bc47ef863ac1321, type: 2}
+  m_sharedMaterial: {fileID: -7314305362391564708, guid: 7eb6e4a40ef49da41bc47ef863ac1321, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1928,8 +1928,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3245,7 +3245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 98783206468523360, guid: 3c67e285452fb22429ecfe99dc1efaad, type: 3}
       propertyPath: m_PlaneDistance
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 501214374124056417, guid: 3c67e285452fb22429ecfe99dc1efaad, type: 3}
       propertyPath: m_Pivot.x
@@ -3359,6 +3359,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1591707076901501994, guid: 2411a612c44ce604d8031a66f4a78585, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 1591707076901501994, guid: 2411a612c44ce604d8031a66f4a78585, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591707076901501994, guid: 2411a612c44ce604d8031a66f4a78585, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591707076901501994, guid: 2411a612c44ce604d8031a66f4a78585, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6464152522028348357, guid: 2411a612c44ce604d8031a66f4a78585, type: 3}
       propertyPath: m_Pivot.x
       value: 0
