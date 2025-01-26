@@ -13,6 +13,9 @@ public class ThoughtBubble : MonoBehaviour
 
     public void ShowDesiredIngredients(List<Ingredient> desiredIngredients)
     {
+        gameObject.SetActive(false);
+        gameObject.SetActive(true);
+
         for(int i = 0; i < spawnedBubbleItems.Count; i++)
         {
             Destroy(spawnedBubbleItems[i].gameObject);

@@ -16,7 +16,7 @@ public class CustomerManager : MonoBehaviour
     [SerializeField]
     private SpeechBubble speechBubble;
     [SerializeField]
-    private Image customerImage;
+    private Image customerWalkInImage;
 
     private int currentCustomerNumber;
     private List<Customer> customersLeft = new List<Customer>();
@@ -56,7 +56,9 @@ public class CustomerManager : MonoBehaviour
 
         currentCustomerNumber++;
 
-        customerImage.sprite = currentCustomer.Image;
+        customerWalkInImage.gameObject.SetActive(false);
+        customerWalkInImage.gameObject.SetActive(true);
+        customerWalkInImage.sprite = currentCustomer.Image;
         IngredientManager.Instance.CreateNewDrinkOrder();
         ShowRandomDialogue();
     }

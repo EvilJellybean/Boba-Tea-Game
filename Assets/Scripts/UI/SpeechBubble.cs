@@ -8,7 +8,13 @@ public class SpeechBubble : MonoBehaviour
     private TMP_Text text;
 
     [SerializeField]
+    private float startDelay = 0.5f;
+
+    [SerializeField]
     private float delayPerCharacter = 0.02f;
+
+    [SerializeField]
+    private CanvasGroup canvasGroup;
 
     private void Awake()
     {
@@ -25,6 +31,7 @@ public class SpeechBubble : MonoBehaviour
     {
         gameObject.SetActive(true);
         this.text.text = string.Empty;
+        canvasGroup.alpha = 0;
 
         StopAllCoroutines();
         StartCoroutine(ShowAnimation(text));
@@ -36,6 +43,10 @@ public class SpeechBubble : MonoBehaviour
         {
             yield break;
         }
+
+        yield return new WaitForSeconds(startDelay);
+
+        canvasGroup.alpha = 1;
 
         float totalTime = text.Length * delayPerCharacter;
         float t = 0;
