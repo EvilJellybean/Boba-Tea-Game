@@ -19,6 +19,8 @@ public class CustomerManager : MonoBehaviour
     private Image customerWalkInImage;
     [SerializeField]
     private Image customerWalkOutImage;
+    [SerializeField]
+    private AudioSource storeEnterSfx;
 
     private int currentCustomerNumber;
     private List<Customer> customersLeft = new List<Customer>();
@@ -59,6 +61,8 @@ public class CustomerManager : MonoBehaviour
             customerWalkOutImage.gameObject.SetActive(true);
             customerWalkOutImage.sprite = currentCustomer.Image;
         }
+
+        storeEnterSfx.Play();
 
         int randomIndex = Random.Range(0, customersLeft.Count);
         currentCustomer = customersLeft[randomIndex];
