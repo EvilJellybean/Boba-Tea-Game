@@ -8,6 +8,12 @@ public class DraggableIngredient : MonoBehaviour
     private SpriteRenderer packetSprite;
     [SerializeField]
     private SpriteRenderer icon;
+    [SerializeField]
+    private AudioClip pickupSfx;
+    [SerializeField]
+    private AudioClip dropSfx;
+    [SerializeField]
+    private float pitchRandomness = 0.25f;
 
     private Camera mainCamera;
     private Vector2 lastMousePosition;
@@ -62,6 +68,9 @@ public class DraggableIngredient : MonoBehaviour
     private void OnMouseDown()
     {
         lastMousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+
+        float pitch = Random.Range(1 - pitchRandomness, 1 + pitchRandomness);
+        AudioManager.Instance.Play(pickupSfx, pitch);
     }
 
     private void OnMouseDrag()
@@ -81,5 +90,8 @@ public class DraggableIngredient : MonoBehaviour
             IngredientManager.Instance.SpawnIngredient(this);
             Destroy(gameObject);
         }
+
+        float pitch = Random.Range(1 - pitchRandomness, 1 + pitchRandomness);
+        AudioManager.Instance.Play(dropSfx, pitch);
     }
 }

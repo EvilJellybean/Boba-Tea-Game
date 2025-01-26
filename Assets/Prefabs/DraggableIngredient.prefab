@@ -53,6 +53,9 @@ MonoBehaviour:
     m_Bits: 64
   packetSprite: {fileID: 1340036898391374797}
   icon: {fileID: 8097320823502201413}
+  pickupSfx: {fileID: 8300000, guid: 9bb7044de44faf54e97c6f229b6246ff, type: 3}
+  dropSfx: {fileID: 8300000, guid: 177210d689c520442878e169ae9a8f94, type: 3}
+  pitchRandomness: 0.25
 --- !u!212 &1340036898391374797
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -146,7 +149,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.08, y: 1.91}
+    oldSize: {x: 1.6, y: 1.4692308}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
